@@ -27,6 +27,9 @@ Session(app)
 # Ruta principal, crear base html donde se pondran los estilos generales,
 # tener nombres de rutas con respecto a las vistas, usar bootstrap para maquetado
 # https://getbootstrap.com/docs/4.0/components/carousel/
+# BARRA DE PROGRESO (? https://codepen.io/jenning/pen/bQvqMm Y https://codepen.io/peruvianidol/pen/NLMvqO)
+# BOTON DE ¿ESTAS LISTO? https://codepen.io/abdelrhmansaid/pen/OJRNOpQ | https://codepen.io/Unleashed-Design/pen/gOrEvMV | https://codepen.io/robsonvinicius/pen/bGpKQrw
+
 
 @app.route("/")
 def index():

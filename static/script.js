@@ -8,9 +8,9 @@ carousel.addEventListener("click",function(e){
     request.onreadystatechange=function(){
         if(this.readyState==4){
             Swal.fire({
-                "title":"Primero debes iniciar sesion",
+                "title":"Inicia Sesion o Crea una Cuenta",
                 "html":this.responseText,
-                "width":800
+                "width":600
             })
         }
     }

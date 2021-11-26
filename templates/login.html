@@ -1,5 +1,11 @@
+{% extends "layout.html" %}
 
- <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
+{% block title %}
+	Iniciar Sesion
+{% endblock %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
 <script src="{{ url_for('static',filename='login.js') }}"></script>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
@@ -26,15 +32,16 @@
 			<div class="overlay-panel overlay-left">
 				<h1>¡Bienvenido a masita!</h1>
 				<h4>¡Aprendamos de transferencia de masa!</h4>
-				<p>Para ver el contenido, deberás crearte una cuenta o acceder a ella.</p>
+				<p>Para desbloquear el contenido, deberás crearte una cuenta o acceder a ella.</p>
 				<button class="ghost" id="signIn">Sign In</button>
 			</div>
 			<div class="overlay-panel overlay-right">
 				<h1>¡Bienvenido a masita!</h1>
 				<h4>¡Aprendamos de transferencia de masa!</h4>
-				<p>Para ver el contenido, deberás crearte una cuenta o acceder a ella.</p>
+				<p>Para desbloquear el contenido, deberás crearte una cuenta o acceder a ella.</p>
 				<button class="ghost" id="signUp">Sign Up</button>
 			</div>
 		</div>
 	</div>
 </div>
+{% endblock %}
