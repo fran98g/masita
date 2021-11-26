@@ -37,6 +37,8 @@ def index():
 @login_required
 @app.route("/bases")
 def bases():
+    if not session.get("user_id"):
+        return render_template("login.html")
     return "Estas en la base"
 
 @app.route("/operaciones")
@@ -48,6 +50,8 @@ def operaciones():
 @login_required
 @app.route("/clasificacion")
 def clasificacion():
+    if not session.get("user_id"):
+        return render_template("login.html")
     return "Clasificacion operaciones"
 
 # LOS ID DE LAS IMAGENES DEBERAN TENER EL MISMO NOMBRE DE RUTAS~
