@@ -1,10 +1,28 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, session
 from cs50 import SQL
+from helpers import login_required
+from flask_session import Session
+from tempfile import mkdtemp
+from werkzeug.exceptions import default_exceptions
+from werkzeug.security import check_password_hash, generate_password_hash
 # Conexion a la base de datos
 db = SQL('sqlite:///masita.db')
 
 # Motor del servidor
 app = Flask(__name__)
+
+@app.after_request
+def after_request(response):
+    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+    response.headers["Expires"] = 0
+    response.headers["Pragma"] = "no-cache"
+    return response
+
+# Configure session to use filesystem (instead of signed cookies)
+app.config["SESSION_FILE_DIR"] = mkdtemp()
+app.config["SESSION_PERMANENT"] = False
+app.config["SESSION_TYPE"] = "filesystem"
+Session(app)
 
 # Ruta principal, crear base html donde se pondran los estilos generales,
 # tener nombres de rutas con respecto a las vistas, usar bootstrap para maquetado
@@ -13,6 +31,27 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html")
+
+# REPETIR LO QUE SE HIZO EN OPERACIONES EN LAS OTRAS DOS RUTAS BASES Y CLASIFICACION, CREAR LAS PLANTILLAS HTML PARA LAS TRES OPCIONES
+
+@login_required
+@app.route("/bases")
+def bases():
+    return "Estas en la base"
+
+@app.route("/operaciones")
+def operaciones():
+    if not session.get("user_id"):
+        return render_template("login.html")
+    return "Operaciones unitarias"
+
+@login_required
+@app.route("/clasificacion")
+def clasificacion():
+    return "Clasificacion operaciones"
+
+# LOS ID DE LAS IMAGENES DEBERAN TENER EL MISMO NOMBRE DE RUTAS~
+
 
 # LOGIN
 
