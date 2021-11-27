@@ -41,20 +41,20 @@ def index():
 @app.route("/bases")
 def bases():
     if not session.get("user_id"):
-        return render_template("login.html")
+        return render_template("register.html")
     return "Estas en la base"
 
 @app.route("/operaciones")
 def operaciones():
     if not session.get("user_id"):
-        return render_template("login.html")
+        return render_template("register.html")
     return "Operaciones unitarias"
 
 @login_required
 @app.route("/clasificacion")
 def clasificacion():
     if not session.get("user_id"):
-        return render_template("login.html")
+        return render_template("register.html")
     return "Clasificacion operaciones"
 
 # LOS ID DE LAS IMAGENES DEBERAN TENER EL MISMO NOMBRE DE RUTAS~
@@ -72,21 +72,21 @@ def login():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
 
-        # Ensure username was submitted
-        if not request.form.get("username"):
-            return apology("must provide username", 403)
+        # Ensure email was submitted
+        if not request.form.get("email"):
+            return apology("must provide email", 403)
 
         # Ensure password was submitted
         elif not request.form.get("password"):
             return apology("must provide password", 403)
 
-        # Query database for username
-        rows = db.execute("SELECT * FROM users WHERE username = :username",
-                          username=request.form.get("username"))
+        # Query database for email
+        rows = db.execute("SELECT * FROM users WHERE email = :email",
+                          email=request.form.get("email"))
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not check_password_hash(rows[0]["hash"], request.form.get("password")):
-            return apology("invalid username and/or password", 403)
+            return apology("invalid email and/or password", 403)
 
         # Remember which user has logged in
         session["user_id"] = rows[0]["id"]
@@ -154,10 +154,25 @@ def register():
     # User reached route via POST (as by submitting a form via POST)
     if request.method == "POST":
 
+        # Submit a name
+        name = request.form.get("name")
+        if not name:
+            return apology("must provide name", 400)
+
+        # Submit a last name
+        apellido = request.form.get("apellido")
+        if not name:
+            return apology("must provide last name", 400)
+
         # Submit a username
         username = request.form.get("username")
         if not username:
             return apology("must provide username", 400)
+
+        # Submit an email
+        email = request.form.get("email")
+        if not email:
+            return apology("must provide email", 400)
 
         # Submit password  HASH
         password = request.form.get("password")
@@ -166,14 +181,14 @@ def register():
         # Verify password
         ver_password = request.form.get("confirmation")
 
-        # Query database for username
+        # Query database for email
         if password == ver_password:
             try:
-                rows = db.execute("INSERT INTO users (username, hash) VALUES (:username, :hash)",
-                                  username=username, hash=generate_password_hash(password, salt_length=8))
+                rows = db.execute("INSERT INTO users (email, username, hash) VALUES (:email, :username, :hash)",
+                                  email=email, username=username, hash=generate_password_hash(password, salt_length=8))
                 session["user_id"] = rows
             except:
-                return apology("¡El usuario ya existe!", 400)
+                return apology("¡El correo ya existe!", 400)
             # Redirect user to home page
             return redirect("/")
 
