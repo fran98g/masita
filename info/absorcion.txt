@@ -1,0 +1,202 @@
+1. Explicación
+Entre las operaciones unitarias que ocurren mediante el contacto de Gas-Líquido, absorción es una de las más importantes.
+Dado que el proceso ocurre mediante el contacto de una mezcla gaseosa con un solvente para disolver uno o más componentes
+del gas, arrastrando uno de los componentes al solvente.
+El proposito del equipo es permitir el contacto intimo de los dos fluidos, con el fin de que se lleve a cabo la difusion
+interfacial de los componentes. La rapidez de la transferencia de masa depende directamente de la superficie intnerfacial
+expuesta entre las fases; por lo tanto, la naturaleza y grado de dispersion de un fluido en el otro son de la mayor importancia.
+
+-Elección de un solvente para la absorción:
+Las siguientes propiedades deben ser consideradas al elegir un solvente para cualquier sistema de absorción:
+a) la solubilidad del gas: La solubilidad del soluto a absorber en el solvente, deberá ser relativamente alta, dado que
+que disminuirá según la cantidad de solvente requerido.
+b) naturaleza química: Generalmente, el solvente debe ser químicamente similar en la estructura del soluto a absorber para
+proveer una mejor solubilidad.
+c) Recuperabilidad: El solvente debe ser facilmente recuperable ya que se reutiliza.
+d) Volatilidad: El solvente debe tener una presión de vapor baja (debe ser menos volatil).
+e) Corrosividad: El solvente no debe corroer el material de los empaques empleados en la construccion de la torre.
+f) Costo y disponibilidad: El solvente debe ser barato y accesible.
+g) Viscosidad: El solvente debe tener baja viscosidad dado que reduce los costos de bombeo y transporte.
+h) Toxicidad, flamabilidad y estabilidad: El solvente no debe ser tóxico, inflamable, quimicamente estable y no reactivo.
+
+El proposito del equipo es permitir el contacto intimo de los dos fluidos, con el fin de que se lleve a cabo la difusion
+interfacial de los componentes. La rapidez de la transferencia de masa depende directamente de la superficie interfacial
+expuesta entre las fases; por lo tanto, la naturaleza y grado de dispersion de un fluido en el otro son de la mayor
+importancia. De modo general, el equipo puede clasificarse segun que su accion principal sea dispersar el gas o el liquido,
+aun cuando en muchos aparatos las dos fases se dispersan.
+
+-Dispersion del gas
+
+-Dispersion del liquido
+
+Diseño de empaques y torres empacadas:
+Un aparato que se utiliza con frecuencia en la absorcion de gases y en otras operaciones es la torre empacada.
+El dispositivo consiste en una columna cilindrica, o torre, equipada con una entrada de gas y un espacio de distribucion en
+la parte inferior; una entrada de liquido y un distribuidor en la parte superior; salidas para el gas y el liquido por la parte
+superior e inferior, respectivamente; y una masa soportada de cuerpos solidos inertes que recibe el nombre de torre empacada.
+
+El soporte del empaque consiste por lo general en una criba o tamiz corrugado, para darle fuerza, con una gran fraccion de area
+libre de forma que no se produzca inundacion en el soporte.
+El liquido entrante, ya sea disolvente puro o una solucion diluida del soluto en el solvente, y que recibe el nombre de licor
+debil o de muy baja concentracion, se distribuye sobre la parte superior del empaque mediante un distribuidor y, en la operacion ideal,
+moja de manera uniforme la superficie del empaque.
+
+
+
+Definiciones Basicas:
+Gas Inerte (G_s)
+Es aquel gas que no interviene durante la operacion de transferencia de masa, es decir, es una corriente constante.
+Liquido Inerte (L_s)
+Es un liquido que no interviene durante la operacion de transferencia de masa, por lo tanto, es una corriente constante.
+Flujo Molar
+Es la cantidad de moles de una sustancia por unidad de tiempo. [Unidades de medida: kmol/h, mol/h, lbmol/h, etc]
+Flujo molar = (flujo masico)(masa molecular)
+Flujo molar = (flujo volumetrico)(densidad)/PM
+Flujo Masico
+Es la cantidad de materia expresada en masa por unidad de tiempo. [Unidades de medida: ton/h, kg/h, lb/h, etc]
+Flujo masico = flujo molar/masa molecular
+Flujo masico = (flujo volumetrica)(densidad)
+Flujo Volumetrico
+Es la cantidad de volumen de una sustancia que se transfiere por unidad de tiempo. [Unidades de medida: l/s, m^3/h, ft^3/s, gal/h, etc]
+Flujo volumetrico = flujo masico/densidad
+Flujo volumetrico = (flujo molar)(PM)/densidad
+
+
+DEFINICIONES
+Plato o Etapa
+Es una parte de la columna donde se pone en contacto las corrientes de liquido y gas con la finalidad de intercambiar masa. Si el liquido
+y el gas que salen de un mismo plato estan en equilibrio a este se le llama plato ideal o teorico.
+
+NOMENCLATURA
+G_1: Corriente total de gases que entran al absorbedor (G_S + G_A)
+G_S: Corriente de gases inertes, los cuales son constantes a traves de la columna
+y_A1: Fraccion molar del gas transferible a la entrada del absorbedor
+Y_A1: Relacion molar del gas transferible A en la entrada del absorbedor
+P_A1: Presion parcial del gas A en la entrada del absorbedor
+G_2:  Corriente total de gases en la salida del absorbedor
+y_A2: Fraccion molar del gas A en la salida del absorbedor
+Y_A2: Relacion molar del gas A en la salida del absorbedor
+P_A2: Presion parcial del gas A en la salida del absorbedor
+L_2: Corriente total de liquido en la entrada del absorbedor
+L_S: Corriente de liquido inerte o liquido no transferible
+x_A1: Fraccion molar del gas A en el liquido a la salida del absorbedor
+X_A1: Relacion molar del gas A en el liquido a la salida del absorbedor
+L_1: Corriente total de liquido a la salida del absorbedor
+x_A2: Fraccion molar del gas A en el liquido a la entrada del absorbedor
+X_A2: Relacion molar del gas A en el liquido a la entrada del absorbedor
+
+Ecuacion de la linea de operacion de absorcion Y_A1 > Y_A2, X_A2 < X_A1
+
+L_S/G_S = (Y_A1 - Y_A2) / (X_A1 - X_A2)
+
+m = Pendiente de la recta
+m = L_S/G_S tg^-1 (m) = tg^-1 (L_S/G_S)
+
+Ecuacion de la linea de operacion de desorcion: X_A2 > X_A1, Y_A2 > Y_A1
+
+L_S/G_S = (Y_A2 - Y_A1) / (X_A2 - X_A1)
+
+Otras relaciones importantes
+-Fase Gaseosa  			-Fase Liquida
+Y = p_i / P_T - p_i 		X = C_i
+Y = y / 1 - y 			X = x / 1 - x
+y = Y / 1 + Y			x = X / 1 + X
+
+En sistemas ideales se cumple la Ley de Raoult
+p_i = y_iP 	p_i = x_i*P_i
+
+Y_i = 1 / P/P_i x 1 + X_i/X_i - 1
+Donde:
+P: Presion total
+P_i: Presion del componente
+x: fraccion molar en fase liquida
+y: fraccion molar en fase gaseosa
+
+
+2. Diagramas de equilibrio
+EXPLICAR LO QUE IRIA EN FQ
++ RETOMAR LA INFO GENERAL DE COMO FUNCIONAN LOS ELV
+
+3. Ecuaciones
+Fundamentos de la Absorcion:
+a) Balance de materia
+Balance total de materia: La + V = L + Va
+Para el componente A: Laxa + Vbyb = Lbxb + Vaya
+Ecuacion de la linea de operacion: y = (L/V)x + (Vaya - Laxa)/V
+4. Aplicaciones
+Algunas de las aplicaciones de esta operación son:
+-Recuperar productos de corrientes gaseosas con fines de produccion
+	-Produccion industrial de disoluciones acidas o basicas en agua
+	 (acidos clorhidrico, sulfurico y nitrico o hidroxido de amonio)
+	-Recuperacion de gases acidos como H_2S, mercaptanos y CO_2 con disoluciones de aminas
+-Control de emisiones de contaminantes a la atmosfera, reteniendo las sustancias contaminantes
+	-(compuestos de azufre, clorados y fluorados)
+	-Eliminacion de SO_2 de gases de combustion con disoluciones acuosas de hidroxido de sodio
+	-Eliminacion de oxidos de nitrogeno con disoluciones de agentes oxidentes
+
+5. Ejemplos
+5.1 Ejemplos teoricos
+1.
+2.
+5.2 Ejemplos faciles
+1.
+2.
+5.3 Ejemplos dificiles
+1.
+2.0
+6. Ejercicios VF
+1.
+2.
+3.
+4.
+7. Ejercicios Complete
+1.
+2.
+3.
+4.
+8. Ejercicios EL
+1.Un absorbedor debe separar 99% del soluto A de una corriente gaseosa que contiene 4%
+mol de A. Las soluciones de A en el solvente siguen la ley de Henry, y el aumento de temperatura del líquido es despreciable.
+a) Calcule NOy para la operación a 1 atm, utilizando
+un flujo de líquido libre de soluto 1.5 veces el valor mínimo. b) Para la misma velocidad
+de líquido, calcule NOy para la operación a 2 atm y a 4 atm. c) ¿Sería el efecto de la presión
+sobre NOy parcialmente compensado mediante una variación en HOy? (18.8)
+
+2. Un esquema para la eliminacion de H2S de una corriente de gas por absorcion con agua a 293K y 1.013x10^5 Pa
+esta siendo considerado en el tratamiento del efluente de un biodigestor. El gas inicialmente contendra 3.7mol%H2S,
+se desea que la corriente de gas que sale contenga solo 0.2% en moles de H2S. El agua utilizada como absorbente entrara en la parte superior
+de la torre y esta libre de H2S. A la temperatura y presion dadas del sistema, el equilibrio de H2S-agua obedecerea la ley de Henry seun la siguiente
+relacion:
+Y=48.3X
+1. Determine los moles de agua por mol de gas portador libre de H2S para la torre de absorcion a contracorriente si se utiliza 1.5 veces la relacion de
+flujo minimo
+2. Determine la composicion del gas absorbido en la corriente liquida a la salida.
+
+2.Un hidrocarburo relativamente no volátil que contiene 4% de mol de propano se extrae por acción directa de vapor sobrecalentado en
+una torre de extracción de platos, para reducir el contenido de propano a 0.2 %, la temperatura se mantiene constante a 422 K por
+medio de un calentamiento de la torre que opera a 2.026x105 Pa de presión. Se usa un total de 11.42 kmol de vapor directo para 300
+kmol de líquido de entrada total. La recta de operación vapor – líquido se puede representar mediante y=25x, donde “y” es la
+fracción mol de propano en el vapor y “x” es la fracción mol del propano en el hidrocarburo. El vapor se puede considerar como gas
+inerte y no se condensará. Grafique la línea de operación y de equilibrio y determine el número de platos teóricos.
+
+3. Un absorbedor es utilizado por una compañia industrial como un lavador de gases. Una mezcla diluida de aire-amoniaco contiene 5.0 mol %NH_3 se alimenta a la
+torre a contracorriente que inicialmente esta siendo alimentada por una corriente libre de amoniaco. El flujo del gas a la entrada es 136 mol/m^2*s y
+la corriente de agua libre de NH_3 es 3.4kg/m^2*s. Los datos de equilibrio estan relacionados por: y_NH_3 = 1.075xNH_3
+Si la corriente de gas a la salida contiene solamente 0.2% de amoniaco, determine:
+a. La composicion de la corriente de flujo en la salida.
+b. El radio actual de L_s/G_ si es mayor a la minima L_s/G_s
+c. La composicion de la corriente de liquido cuando la mezcla de gas contiene 2.0 mol% amoniaco.
+
+4.
+5.
+9. Evaluacion Final
+1.
+Pista1:
+2.
+Pista2:
+3.
+Pista3:
+4.
+Pista4:
+5.
+Pista5:

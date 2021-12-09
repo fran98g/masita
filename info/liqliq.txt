@@ -23,7 +23,13 @@ de reparto, son los siguientes:
        Fase pesada, %peso       |      Fase ligera, %peso
 Cloroformo | Agua | Ac. acetico | Cloroformo | Agua | Ac. acetico
 99         |   1  |     0       |     1      |  99  |     0
-92         | 
+92         |   1  |     7       |     1      |  74  |     25
+80         |   2  |     18      |     7      |  49  |     44
+70         |   4  |     26      |     15     |  35  |     50
+67         |   5  |     28      |     18     |  31  |     51
+60         |   8  |     32      |     24     |  25  |     51
+56         |   9  |     35      |     29     |  22  |     49
+
 2.
 6. Ejercicios VF
 1.

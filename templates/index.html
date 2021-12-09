@@ -3,11 +3,32 @@
 {% block title %}masita{% endblock %}
 
 {% block body %}
+<style>
+  .prueba{
+    width:100px;
+    height:100px;
+    background-color:#000;
+    position:absolute;
+    z-index:-4;
+    top:2;
+  }
+</style>
 <div class="container">
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner" id="carousel-click">
+      <!----<link rel="stylesheet" href="{{ url_for('static',filename='bases.css') }}">---->
       <div class="carousel-item active">
-        <img src="https://res.cloudinary.com/masita/image/upload/v1638016039/vistas/Comportamiento_de_fases_Diagrama_de_fases_cq1ffw.png" class="d-block w-100" alt="..." id="bases">
+        <!---<img src="#" class="d-block w-100" alt="...">--->
+        <div class="d-block w-100" id="bases" style="background-image:url('https://res.cloudinary.com/masita/image/upload/v1638016039/vistas/Comportamiento_de_fases_Diagrama_de_fases_cq1ffw.png');">
+          <div class="background-one">
+            <div class="link-container">
+              <a class="link-one" href="#">Balance de Materia y Energia</a>
+            </div>
+          </div>
+          <div class="background-two link-container">
+            <a class="link-two" href="#">Fisicoquimica</a>
+          </div>
+        </div>
       </div>
       <div class="carousel-item">
         <img src="https://res.cloudinary.com/masita/image/upload/v1638016039/vistas/Fllkrper-Tower-Packings-Packed_Tower_Internals_g2ckwd.jpg" class="d-block w-100" alt="..." id="operaciones">

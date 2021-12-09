@@ -1,0 +1,209 @@
+1. Explicación
+La destilacion puede llevarse a cabo segun dos metodos principales. El primer metodo se basa en la produccion de vapor mediante la ebullicion
+de la mezcla liquida que se desea separar y la condensacion de los vapores sin permitir que el liquido retoren a la columna del equipo de destilacion.
+Por lo tanto, no hay reflujo.
+El segundo metodo se basa en el retorno de una parte del condensado a la columna, en condiciones tales que el liquido que retorna se pone en contacto intimo
+con los vapores que ascienden hacia el condensador.
+
+DESTILACION FLASH
+Consiste en la vaporizacion de una fraccion definida del liquido, en una manera tal que el vapor que se forma esta en equilibrio con el liquido
+residual, separando el vapor del liquido y condensado el vapor.
+
+En la siguiente figura se muestran los elementos que conforman una planta de destilacion instantanea.
+
+https://res.cloudinary.com/masita/image/upload/v1638647337/destilacion/destilacion3_lmqjzd.png
+
+La alimentacion se hace circular por medio de la bomba a, a traves del calentador b, y se reduce la presion en la valvula c. Una mezcla intima de vapor y liquido
+entra en el separador d, en el que permanece el tiempo suficiente para permitir que se separen las corrientes de vapor y liquido. Debido al gran contacto existente
+entre el liquido y el vapor antes de su separacion, las corrientes que se separan estan en equilibrio. El vapor sale a traves de la linea e y el liquido a traves de la linea g.
+
+DESTILACION FLASH DE MEZCLAS BINARIAS
+
+La destilacion instantanea (destilacion flash) se usa de manera extensa en la refinacion del petroleo, en la cual sus fracciones se calientan en destiladores de tubos
+y el fluido calentado se evapora instantaenamente (flash) en corrientes de vapor y corrientes de liquido residuales, cada una de las cuales contiene muchos componentes.
+El liquido proveniente de un absorbedor se somete a destilacion instantanea para recuperar una parte de soluto y el liquido de un reactor a alta presion se puede destilar instantaneamente
+a baja presion, generando algo del vapor.
+
+A partir de un balance de materia para el componente mas volatil, basado en 1 mol de alimentacion, toda la cantidad de este componente que entra en la alimentacion tiene que salir
+en las dos corrientes que salen del destilador.
+
+$xF = fy_D + $($ 1 - f $)$x_B$ (ec. 1)
+
+Para utilizar la ecuacion anterior, se debe contar con una segunda relacion entre las incognitas (x_B y x_D). Tal relacion esta dada por la curva de equilibrio
+o por una ecuacion basada en la volutilidad relativa, $\(\alpha\) \(A\)$. PAra los componentes A y B en una mezcla, $\(\alpha\) \(A\)$ se define como
+
+$\(\alpha\) \(A\)$ = y_Ae / x_Ae / y_Be / x_Be (ec.2)
+
+Para mezclas ideales, la volatilidad relativa es igual a la relacion entre las presiones de vapor, ya que se cumple la ley de Raoul $\(\alpha\) \(A\)$ es casi constante en el rango de temperaturas
+presente en una destilacion tipica.
+
+https://res.cloudinary.com/masita/image/upload/v1638651026/destilacion/ecuacion_destilacion_v6f1o7.png (ec. 3)
+
+Para mezclas binarias, generalmente se omiten los subindices, puesto que x_B = 1 - x_A y y_b = 1 - y_A. La ec. 2 se puede convertir en una forma mas util, relacionando directamente y con x, que se entiende
+que son y_Ae y x_Ae.
+
+y = $\(\alpha\) \(A\)$x / 1 + ($\(\alpha\) \(A\)$ - 1)x (ec. 4)
+
+La fraccion f de la ec. 1 no se fija directamente, sino que depende de la entalpia de la corriente caliente que ingresa y de las entalpias del vapor y del liquido que dejan la camara de
+destilacion instantanea.
+
+H_F = f H_y + (1 - f) H_x (ec. 5)
+
+donde H_F, H_y y H_x son respectivamente las entalpias del liquido de alimentacion, el vapor y el liquido producidos.
+
+DESTILACION CONTINUA CON REFLUJO
+
+La destilacion flash o instantanea se utiliza esencialmente para la separacion de componentes que tienen temperaturas de ebullicion muy diferentes.
+No es eficaz en la separacion de componentes de volatilidad comparable, los cuales requieren del uso de la destilacion con reflujo. Para la produccion en gran escala, es mas comun la destilacion continua,
+que la destilacion discontinua.
+
+<b>Accion en un plato ideal</b>
+
+En un plato ideal, por definicion, el liquido y el vapor que salen del plato se encuentran en equilibrio.
+Los platos se ponen en contacto con la fase líquida y el gas en contracorriente. Lo que transcurre es una transferencia de materia a causa del gradiente de concentración.
+Los platos se numeran en serie dede la parte superior (destilado) hasta la parte inferior (residuo) de la columna y que el plato que se considera es el numero
+n partiendo desde la parte superior. Por lo tanto, el plato inmediatamente superior es el plato n-1 y el inmediamente inferior es el plato n+1. Los subindices representan en todos los casos el punto de origen
+de la magnitud correspondiente.
+
+https://res.cloudinary.com/masita/image/upload/v1638654260/destilacion/destilacionplatos_peacbj.png
+
+En el plato n entran dos corrientes de fluido y salen otras dos. Puesto que las corrientes de vapor son la fase V, sus concentraciones se representan por y. Las corrientes de liquido son la fase L, y sus concentraciones
+se representan por x. Por lo tanto, las concentraciones de las corrientes que entran y salen del plato n son las siguientes:
+
+Vapor que sale del plato y_n
+Liquido que sale del plato x_n
+Vapor que entra en el plato y_n+1
+Liquido que entra en el plato x_n-1
+
+2. Diagramas de equilibrio
+
+-Diagrama del punto de ebullicion
+En este diagrama se presentan los datos de la mezcla binaria VLE (Equilibrio Liquido-Vapor) a una cierta presión global, como 1 atm, que muestran las concentraciones de vapor y líquido de la fracción molar al hervir a varias temperaturas.
+Constant-Pressure Liquid-Vapor Equilibrium Data for Selected Binary Systems
+3. Ecuaciones
+B. Total: F = B + D
+B. Comp: Fx_F = Bx_B + Dx_D
+Eliminando B: D/A = x_A - x_B / x_D - x_B
+Eliminando D: B/A =
+
+linea de alimentacion:
+y = - (1 - f / f) x + x_F/f
+4. Aplicaciones
+
+5. Ejemplos
+5.1 Ejemplos teoricos
+1.
+2.
+5.2 Ejemplos faciles
+1.
+2.
+5.3 Ejemplos dificiles
+1. Se dispone de una columna de rectificacion para recuperar el 90% del etanol contenido en una mezcla acuosa, cuya composicion en peso
+del componente volatil es del 50%. El alimento se introduce como una mezcla de liquido-vapor, conteniendo un 50% de liquido. Cuando la
+columna opera con una relacion de reflujo 50% superior a la minima se obtiene una corriente de residuo con un contenido en peso de agua
+del 90%. Determinar:
+a) Composicion molar del destilado.
+b) Plato de alimentacion
+c) Numero de platos necesarios si la eficacia global de la columna es del 80%.
+Datos de equilibrio del sistema etanol-agua
+ x    |   y
+0.01  | 0.103
+0.03  | 0.235
+0.05  | 0.325
+0.1   | 0.444
+0.2   | 0.529
+0.3   | 0.573
+0.4   | 0.613
+0.5   | 0.652
+0.6   | 0.697
+0.7   | 0.753
+0.8   | 0.818
+0.85  | 0.856
+0.87  | 0.873
+0.894 | 0.894
+
+2. Se proyecta una columna de rectificacion en marcha continua para separar 20,000kg/h de una mezcla
+cloroformo-benceno cuya composicion es 0.5 en fraccion molar de cloroformo, para suministrar un producto de
+cabeza de composicion 0.97 en fraccion molar de cloroformo y un producto de fondo de composicion 0.97 en fraccion molar de benceno.
+La columna ha de trabajar a la presion atmosferica normal, y la alimentacion entrara como liquido a su temperatura
+de ebullicion. La cabeza de la columna va provista de un condensador total, y tanto el reflujo como el producto
+destilado salen del condensador a la temperatura de condensacion.
+(Cloroformo PM=119.38 g/mol; Benceno PM=78g/mol)
+Calculese:
+a) los caudales de alimentacion, producto de cabeza y producto de fondo, en kmol/h
+b) las ecuaciones de las rectas superior e inferior de operacion, si la relacion de reflujo es el 20% superior a la minima
+c) el numero de platos teoricos y la posicion del plato de alimentacion
+
+3. Un líquido que contiene 25% en mol de tolueno, 40% en mol de etilbenceno y 35% en
+mol de agua se somete a una destilación continua e instantánea a una presión total de 0.5
+atm. Los datos para estas sustancias se dan en la tabla 21.4. Suponiendo que las mezclas de
+tolueno y etilbenceno obedecen a la ley de Raoult y que los hidrocarburos son completamente
+inmiscibles en agua, calcule la temperatura y las composiciones de las fases líquida y vapor
+a) en el punto de burbuja, b) en el punto de rocío, y c) en el punto de 50% (la mitad de la
+alimentación sale como vapor y la otra mitad como líquido).4
+
+4. Se dispone de una columna de rectificacion para recuperar el 90% del etanol contenido en una mezcla acuosa, cuya composicion en peso del componente
+volatil es del 50%. El alimento se introduce como una mezcla de liquido-vapor, conteniendo un 50% de liquido. Cuando la columna opera con una relacion
+de reflujo 50% superior a la minima se obtiene una corriente de residuo con un contenido en peso de agua del 90%.
+Determinar:
+a) composicion molar del destilado
+b) plato de alimentacion
+c) numero de platos necesarios si la eficacia global de la columna es del 80%
+Datos de equilibrio del sistema etanol-agua
+x       y
+0.01    0.103
+0.03    0.235
+0.05    0.325
+0.1     0.444
+0.2     0.529
+0.3     0.573
+0.4     0.613
+0.5     0.652
+0.6     0.697
+0.7     0.753
+0.8     0.818
+0.85    0.856
+0.87    0.873
+0.8994  0.894
+
+5. Se va a diseñar una columna de fraccionamiento continuo para separar 30000 kg/h de una mezcla de 40% de benceno y 60% de tolueno
+en un producto destilado que contiene 97% de benceno y un producto residual de 98% de tolueno. Estos porcentajes estan expresados en peso.
+Se utilizara una relacion de reflujo de 3.5 moles por 1 mol de producto. Los calores latentes molares del benceno y del tolueno son 7360 y
+7960 cal/g, respectivamente. El benceno y el tolueno forman un sistema ideal con una volatilidad relativa del orden de 2.5; la curva de equilibrio
+se muestra en la figura. La alimentacion tiene una temperatura de ebullicion de 95°C a la presion de 1 atm.
+a) Calcul e los moles de los productos destilados y residuales por hora.
+b) Determine el numero de platos ideales y la posicion del plato de alimentacion
+i)si la alimentacion es un liquido a su temperatura de ebullicion
+ii) so i la alimentacion es un liquido a 20°C (calor especifico = 0.44cal/g °C)
+iii) si la alimentacion es una mezcla de dos tercios de vapor y un tercio de liquido.
+c) si para el calentamiento se utiliza vapor de agua a la presion manometrica de 20lbf/in^2 (1.36 atm), ¿que cantidad de vapor se requiere por hora
+para cada uno de los tres casos anteriores, despreciando las perdidas de calor y suponiendo que el relujo es un liquido saturado?
+d) si el agua de enfriamiento entra en el condensador a 25°C y sale a 40°C ¿que cantidad de agua de enfriamiento sera necesaria en metros cubicos por hora?
+
+6. Ejercicios VF
+1.
+2.
+3.
+4.
+7. Ejercicios Complete
+1.
+2.
+3.
+4.
+8. Ejercicios EL
+1.
+2.
+3.
+4.
+5.
+9. Evaluacion Final
+1.
+Pistas:
+2.
+Pistas:
+3.
+Pistas:
+4.
+Pistas:
+5.
+Pistas:

@@ -9,21 +9,21 @@
 <script src="{{ url_for('static',filename='login.js') }}"></script>
 <div class="container" id="container">
 	<div class="form-container sign-up-container">
-		<form action="#">
+		<form action="{{url_for('login')}}", method="POST">
 			<h1>Crear Cuenta</h1>
 			<span>o inicia sesion</span>
-			<input type="text" placeholder="Nombre" />
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Contraseña" />
-			<button>Sign Up</button>
+			<input type="text" placeholder="Nombre" name="name"/>
+			<input type="email" placeholder="Email" name="email"/>
+			<input type="password" placeholder="Contraseña" name="password1" />
+			<button>Sign In</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
-		<form action="#">
+		<form action="{{url_for('login')}}", method="POST">
 			<h1>Iniciar Sesion</h1>
-			<input type="email" placeholder="Email" />
-			<input type="password" placeholder="Contraseña" />
-			<a href="#">¿Olvidaste tu contraseña?</a>
+			<input type="email" placeholder="Email" name="email"/>
+			<input type="password" placeholder="Contraseña" name="password"/>
+			<a href="{{ url_for('changepassword')}}">¿Olvidaste tu contraseña?</a>
 			<button>Sign In</button>
 		</form>
 	</div>
@@ -39,7 +39,7 @@
 				<h1>¡Bienvenido a masita!</h1>
 				<h4>¡Aprendamos de transferencia de masa!</h4>
 				<p>Para desbloquear el contenido, deberás crearte una cuenta o acceder a ella.</p>
-				<button class="ghost" id="signUp">Sign Up</button>
+				<a class="btn btn-primary" href={{url_for('register')}} role="button">Sign Up</a>
 			</div>
 		</div>
 	</div>

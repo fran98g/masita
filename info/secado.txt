@@ -1,0 +1,53 @@
+1. Explicación
+
+2. Diagramas de equilibrio
+
+3. Ecuaciones
+
+4. Aplicaciones
+
+5. Ejemplos
+5.1 Ejemplos teoricos
+1.
+2.
+5.2 Ejemplos faciles
+1.
+2.
+5.3 Ejemplos dificiles
+1.
+2.
+6. Ejercicios VF
+1.
+
+2.
+3.
+4.
+7. Ejercicios Complete
+1.
+2.
+3.
+4.
+8. Ejercicios EL
+1.
+2.
+3.
+4.
+5.
+9. Evaluacion Final
+1. Se va a secar espato-fluor (CaF2) desde 6 hasta 0.4% de humedad (base seca) en un secador rotatorio
+adiabatico a contracorriente a una velocidad de 18,000 lb/h de solidos totalmente secos. El aire caliente
+entra a 1000 °F con una humedad de 0.03 y una temperatura de bulbo humedo de 150°F.
+Los solidos tienen un calor especifico de 0.48 btu/lb °F; entran al secador a 70°F y salen a 200°F.
+La velocidad masica maxima persmisible para el aire es 2000 lb/ft^2 * h.
+a) Suponiendo que se aplica la ecuacion (24.8 McCabe), ¿Cual sera el diametro y la longitud del secador si
+Nt=2.2? ¿Es este un diseño razonable?
+b) Repita la parte a) con Nt=1.8
+Pistas:
+2.
+Pistas:
+3.
+Pistas:
+4.
+Pistas:
+5.
+Pistas:

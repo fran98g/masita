@@ -1,0 +1,520 @@
+{% extends "layout.html" %}
+
+{% block title %}absorcion{% endblock %}
+
+{% block body %}
+<p>
+    <b>1. Explicación</b>
+<p style="text-align:justify;">
+    Entre las operaciones unitarias que ocurren mediante el contacto de Gas-Líquido, absorción es una de las más importantes.
+Dado que el proceso ocurre mediante el contacto de una mezcla gaseosa con un solvente para disolver uno o más componentes
+del gas, arrastrando uno de los componentes al solvente.
+El proposito del equipo es permitir el contacto intimo de los dos fluidos, con el fin de que se lleve a cabo la difusion
+interfacial de los componentes. La rapidez de la transferencia de masa depende directamente de la superficie intnerfacial
+expuesta entre las fases; por lo tanto, la naturaleza y grado de dispersion de un fluido en el otro son de la mayor importancia.
+</p>
+
+<b>-Elección de un solvente para la absorción:</b>
+Las siguientes propiedades deben ser consideradas al elegir un solvente para cualquier sistema de absorción:
+<ol type="a">
+    <li><b>la solubilidad del gas:</b> La solubilidad del soluto a absorber en el solvente, deberá ser relativamente alta, dado que
+        que disminuirá según la cantidad de solvente requerido.</li>
+    <li><b>naturaleza química:</b> Generalmente, el solvente debe ser químicamente similar en la estructura del soluto a absorber para
+        proveer una mejor solubilidad.</li>
+    <li><b>Recuperabilidad:</b> El solvente debe ser facilmente recuperable ya que se reutiliza.</li>
+    <li><b>Volatilidad:</b> El solvente debe tener una presión de vapor baja $($debe ser menos volatil$)$.</li>
+    <li><b>Corrosividad:</b> El solvente no debe corroer el material de los empaques empleados en la construccion de la torre.</li>
+    <li><b>Costo y disponibilidad:</b> El solvente debe ser barato y accesible.</li>
+    <li><b>Viscosidad:</b> El solvente debe tener baja viscosidad dado que reduce los costos de bombeo y transporte.</li>
+    <li><b>Toxicidad, flamabilidad y estabilidad:</b> El solvente no debe ser tóxico, inflamable, quimicamente estable y no reactivo.</li>
+</ol>
+
+
+<p style="text-align:justify;">
+    El proposito del equipo es permitir el contacto intimo de los dos fluidos, con el fin de que se lleve a cabo la difusion
+interfacial de los componentes. La rapidez de la transferencia de masa depende directamente de la superficie interfacial
+expuesta entre las fases; por lo tanto, la naturaleza y grado de dispersion de un fluido en el otro son de la mayor
+importancia. De modo general, el equipo puede clasificarse segun que su accion principal sea dispersar el gas o el liquido,
+aun cuando en muchos aparatos las dos fases se dispersan.</p>
+
+<b>-Dispersion del gas</b>
+<p></p>
+<b>-Dispersion del liquido</b>
+<p></p>
+<b>Diseño de empaques y torres empacadas:</b>
+<p style="text-align:justify;">Un aparato que se utiliza con frecuencia en la absorcion de gases y en otras operaciones es la torre empacada.
+El dispositivo consiste en una columna cilindrica, o torre, equipada con una entrada de gas y un espacio de distribucion en
+la parte inferior; una entrada de liquido y un distribuidor en la parte superior; salidas para el gas y el liquido por la parte
+superior e inferior, respectivamente; y una masa soportada de cuerpos solidos inertes que recibe el nombre de torre empacada.</p>
+
+<p style="text-align:justify;">Un aparato que se utiliza con frecuencia en la absorcion de gases y en otras operaciones es la torre empacada.
+El soporte del empaque consiste por lo general en una criba o tamiz corrugado, para darle fuerza, con una gran fraccion de area
+libre de forma que no se produzca inundacion en el soporte.
+El liquido entrante, ya sea disolvente puro o una solucion diluida del soluto en el solvente, y que recibe el nombre de licor
+debil o de muy baja concentracion, se distribuye sobre la parte superior del empaque mediante un distribuidor y, en la operacion ideal,
+moja de manera uniforme la superficie del empaque.</p>
+<p><b>Objetivo del diseño</b></p>
+<p>Lograr el <b>maximo de transferencia</b> de componentes con el <b>minimo</b> consumo de energia y de <b>tamaño de columna</b>, es decir, con el <b>minimo costo.</b></p>
+<p>Diseñar una columna de absorcion implica calcular la altura del relleno necesario para lograr la separacion deseada.</p>
+<p><b><u>Datos de diseño que son conocidos normalmente:</u></b></p>
+<p>Condiciones de operacion de la columna: $P_T$ y T</p>
+<p>Composicion de las corrientes de entrada</p>
+<p>Composicion del gas a la salida $($fin perseguido$)$</p>
+<p>Circulacion en contracorriente</p>
+
+<p><b><u>Otros parametros de diseño:</u></b></p>
+<p>Diametro de la columna</p>
+<p>Caudales de las dos fases</p>
+<p>Tipo de relleno</p>
+
+<p><b></b></p>
+<p></p>
+
+<table>
+  <caption>Tabla A. Terminologia para corrientes en operaciones de transferencia de materia</caption>
+  <thead>
+    <tr>
+      <th>Operacion</th>
+      <th>Fase V</th>
+      <th>Fase L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Absorcion de gases</td>
+      <td>Gas</td>
+      <td>Liquido</td>
+    </tr>
+    <tr>
+      <td>Deshumidificacion</td>
+      <td>Gas</td>
+      <td>Liquido</td>
+    </tr>
+    <tr>
+      <td>Destilacion</td>
+      <td>Vapor</td>
+      <td>Liquido</td>
+    </tr>
+    <tr>
+      <td>Adsorcion</td>
+      <td>Gas o liquido</td>
+      <td>Solido</td>
+    </tr>
+    <tr>
+      <td>Extraccion de liquidos</td>
+      <td>Extracto</td>
+      <td>Refinado</td>
+    </tr>
+    <tr>
+      <td>Lixiviacion</td>
+      <td>Liquido</td>
+      <td>Solido</td>
+    </tr>
+    <tr>
+      <td>Secado</td>
+      <td>Licor madre</td>
+      <td>Solido humedo</td>
+    </tr>
+    <tr>
+      <td>Cristalizacion</td>
+      <td>Licor madre</td>
+      <td>Cristales</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><b>Definiciones Basicas:</b></p>
+<p><b>-Gas Inerte $(G_s)$</b></p>
+<p>Es aquel gas que no interviene durante la operacion de transferencia de masa, es decir, es una corriente constante.</p>
+<p><b>-Liquido Inerte $(L_s)$</b></p>
+<p>Es un liquido que no interviene durante la operacion de transferencia de masa, por lo tanto, es una corriente constante.</p>
+<p><b>-Flujo Molar</b></p>
+<p>Es la cantidad de moles de una sustancia por unidad de tiempo. [Unidades de medida: kmol/h, mol/h, lbmol/h, etc]</p>
+<p>Flujo molar = $($flujo masico$)($masa molecular$)$</p>
+<p>Flujo molar = $\frac{(flujo volumetrico)(densidad)}{PM}$</p>
+<p><b>-Flujo Masico</b></p>
+<p>Es la cantidad de materia expresada en masa por unidad de tiempo. [Unidades de medida: ton/h, kg/h, lb/h, etc]</p>
+<p>Flujo masico = flujo molar/masa molecular</p>
+<p>Flujo masico = $($flujo volumetrico$)($densidad$)$</p>
+<p><b>-Flujo Volumetrico</b></p>
+<p>Es la cantidad de volumen de una sustancia que se transfiere por unidad de tiempo. [Unidades de medida: l/s, $m^3/h$, $ft^3/s$, gal/h, etc]</p>
+<p>Flujo volumetrico = flujo masico/densidad</p>
+<p>Flujo volumetrico = $\frac{(flujo molar)(PM)}{densidad}$</p>
+
+
+<p><b>DEFINICIONES</b>
+<p><b>-Plato o Etapa</b>
+<p>Es una parte de la columna donde se pone en contacto las corrientes de liquido y gas con la finalidad de intercambiar masa. Si el liquido
+y el gas que salen de un mismo plato estan en equilibrio a este se le llama plato ideal o teorico.
+
+<p><b>-NOMENCLATURA</b>
+<p><ul>
+    <p>$G_1$: Corriente total de gases que entran al absorbedor $(G_S + G_A)$</p>
+    <p>$G_S$: Corriente de gases inertes, los cuales son constantes a traves de la columna</p>
+    <p>$y_{A1}$: Fraccion molar del gas transferible a la entrada del absorbedor</p>
+    <p>$Y_{A1}$: Relacion molar del gas transferible A en la entrada del absorbedor</p>
+    <p>$P_{A1}$: Presion parcial del gas A en la entrada del absorbedor</p>
+    <p>$G_2$:  Corriente total de gases en la salida del absorbedor</p>
+    <p>$y_{A2}$: Fraccion molar del gas A en la salida del absorbedor</p>
+    <p>$Y_{A2}$: Relacion molar del gas A en la salida del absorbedor</p>
+    <p>$P_{A2}$: Presion parcial del gas A en la salida del absorbedor</p>
+    <p>$L_2$: Corriente total de liquido en la entrada del absorbedor</p>
+    <p>$L_S$: Corriente de liquido inerte o liquido no transferible</p>
+    <p>$x_{A1}$: Fraccion molar del gas A en el liquido a la salida del absorbedor</p>
+    <p>$X_{A1}$: Relacion molar del gas A en el liquido a la salida del absorbedor</p>
+    <p>$L_1$: Corriente total de liquido a la salida del absorbedor</p>
+    <p>$x_{A2}$: Fraccion molar del gas A en el liquido a la entrada del absorbedor</p>
+    <p>$X_{A2}$: Relacion molar del gas A en el liquido a la entrada del absorbedor</p>
+    <p>V: Velocidad del flujo molar de la fase gaseosa</p>
+    <p>L: Velocidad del flujo molar de la gase liquida</p>
+</ul></p>
+
+
+<p>Ecuacion de la linea de operacion de absorcion $Y_{A1} > Y_{A2},&nbsp;X_{A2} < X_{A1}$</p>
+
+<p>$L_S/G_A$=$(Y_{A1}−Y_{A2})/(X_{A1}−X_{A2})$</p>
+<p>y=L/Vx + [$V_ay_a - L_ax_x$]/ V</p>
+
+<p>m = Pendiente de la recta</p>
+<p>m = $L_S/G_S tg^{-1} (m) = tg^{-1} (L_S/G_S)$</p>
+
+<p>Ecuacion de la linea de operacion de desorcion: $X_{A2} > X_{A1}$,&nbsp;$Y_{A2} > Y_{A1}$</p>
+
+<p>$L_S/G_S = (Y_{A2} - Y_{A1}) / (X_{A2} - X_{A1})$</p>
+
+<table>
+  <caption>Otras relaciones importantes</caption>
+  <thead>
+    <tr>
+      <th>-Fase Gaseosa&nbsp;&nbsp;&nbsp;</th>
+      <th>-Fase Liquida</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$Y = p_i / P_T - p_i$&nbsp;&nbsp;&nbsp;</td>
+      <td>$X = C_i$</td>
+    </tr>
+    <tr>
+      <td>$Y = y / 1 - y$&nbsp;&nbsp;&nbsp;</td>
+      <td>$X = x / 1 - x$</td>
+    </tr>
+    <tr>
+      <td>$y = Y / 1 + Y$&nbsp;&nbsp;&nbsp;</td>
+      <td>$x = X / 1 + X$</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En sistemas ideales se cumple la Ley de Raoult</p>
+<p>$p_i = y_iP$</p>
+<p>$p_i = x_i*P_i$</p>
+
+<p>$Y_i = 1 / P/P_i x 1 + X_i/X_i - 1$</p>
+<p>Donde:</p>
+<p>P: Presion total</p>
+<p>$P_i$: Presion del componente</p>
+<p>x: fraccion molar en fase liquida</p>
+<p>y: fraccion molar en fase gaseosa</p>
+
+
+<p><b>2. Diagramas de equilibrio</b></p>
+<p style="text-align:justify;"> El concepto de sistema heterogéneo implica el concepto de fase. Fase es toda porción de un sistema con la misma estructura o arreglo atómico, con aproximadamente la
+misma composición y propiedades en todo el material que la constituye y con una interfase definida con toda otra fase vecina. Puede tener uno ó varios componentes. Debe
+diferenciarse del concepto de componente, que se refiere al tipo de material que puede distinguirse de otro por su naturaleza de sustancia química diferente.
+Los equilibrios entre fases pueden corresponder a los más variados tipos de sistemas heterogéneos.</p>
+<p style="text-align:justify;">El comportamiento de estos sistemas en equilibrio se estudia por medio de gráficos
+que se conocen como diagramas de fase : se obtienen graficando en función de variables
+como presión, temperatura y composición y el sistema en equilibrio queda definido para
+cada punto $($los gráficos de cambio de estado físico ó de presión de vapor de una solución
+de dos líquidos son ejemplos de diagramas de fases$)$.</p>
+<p>A partir de los diagramas de fase se puede obtener información como:</p>
+<p>
+  <ol>
+    <li>Conocer que fases están presentes a diferentes composiciones y temperaturas bajo
+        condiciones de enfriamiento lento $($equilibrio$)$.</li>
+    <li>Averiguar la solubilidad, en el estado sólido y en el equilibrio, de un elemento $($o
+        compuesto$)$ en otro</li>
+    <li>Determinar la temperatura en la cual una aleación enfriada bajo condiciones de
+        equilibrio comienza a solidificar y la temperatura a la cual ocurre la solidificación.</li>
+    <li>Conocer la temperatura a la cual comienzan a fundirse diferentes fases.</li>
+  </ol>
+</p>
+
+<p style="text-align:justify;">Los Diagramas de Fase representan esencialmente una expresión gráfica
+de la “Regla de las Fases”, la cual permite calcular el número de fases que pueden coexistir
+en equilibrio en cualquier sistema, y su expresión matemática está dada por:</p>
+<p>$P+F=C+2$</p>
+<p>Donde:</p>
+<p>C = número de componentes del sistema</p>
+<p>P = número de fases presentes en el equilibrio</p>
+<p>F = número de grados de libertad del sistema $($variables: presión, temperatura,
+composición$)$</p>
+
+<p style="text-align:justify;">El número de grados de libertad se determina por la regla de las fases, si y solo si el equilibrio entre las
+fases no está influenciado por la gravedad, fuerzas eléctricas o magnéticas y solo se afecta por la temperatura, presión y concentración. El número dos en la regla corresponde a las
+variables de temperatura T y presión P.</p>
+<p><b>Componente $($de un sistema$)$:</b> es el menor número de constituyentes químicos
+independientemente variables necesarios y suficientes para expresar la composición de cada
+fase presente en cualquier estado de equilibrio</p>
+<p><b>Fase: </b>es cualquier fracción, incluyendo la totalidad, de un sistema que es físicamente
+homogéneo en si mismo y unido por una superficie que es mecánicamente separable de
+cualquier otra fracción. Una fracción separable puede no formar un cuerpo continuo, como
+por ejemplo un líquido dispersado en otro.</p>
+<p>- Un sistema compuesto por una fase es homogéneo</p>
+<p>- Un sistema compuesto por varias fases es heterogéneo</p>
+<p>Para los efectos de la regla de las fases, cada fase se considera homogénea en los
+equilibrios heterogéneos.</p>
+<p><b>Grado de libertad $($o varianza$)$:</b> es el número de variables intensivas que pueden ser
+alteradas independientemente y arbitrariamente sin provocar la desaparición o formación de
+una nueva fase. Variables intensivas son aquellas independientes de la masa: presión,
+temperatura y composición. También se define con el número de factores variables.</p>
+<p>F=0 indica invariante</p>
+<p>F=1 univariante</p>
+<p>F=2 bivariante</p>
+
+<p>La regla de las fases se aplica sólo a estados de equilibrios de un sistema y requiere:</p>
+<p>
+  <ol>
+    <li>Equilibrio homogéneo en cada fase</li>
+    <li>Equilibrio heterogéneo entre las fases coexistentes</li>
+  </ol>
+</p>
+<p style="text-align:justify;">La regla de las fases no depende de la naturaleza y cantidad de componentes o fases
+presentes, sino que depende sólo del número. Además no da información con respecto a la
+velocidad de reacción.
+El número de componentes más dos $($C+2$)$, representa el número máximo de fases
+que pueden coexistir al equilibrio, donde los grados de libertad $($F$)$ no pueden ser inferiores
+a cero $($a condiciones invariantes$)$.</p>
+
+<p>Al existir dos componentes en el sistema en consideración la regla de las fases
+queda:</p>
+<p>F + P = 4</p>
+<p style="text-align:justify;">Luego, para representar gráficamente el campo de estabilidad de una región homogénea
+$($monofásica$)$ se requieren 3 variables, lo que hace necesario el sistema en un diagrama
+tridimensional.</p>
+<p>Por lo tanto,</p>
+<p>
+  <ul>
+    <li>1 fase: bivariante $($F=2$)$</li>
+    <li>2 fases: univariante $($F=1$)$</li>
+    <li>3 fases: invariante $($F=0$)$</li>
+  </ul>
+</p>
+<p style="text-align:justify;">Por conveniencia se suelen mantener P o T constantes y se representa gráficamente un
+sistema de fases bidimensionales, que es un corte transversal de la representación
+tridimensional.</p>
+
+<p><b>Equilibrio Liquido-Vapor</b></p>
+<p style="text-align:justify;">a)Disolución ideal a temperatura constante: Sean dos líquidos A y B que forman
+una disolución ideal. Se mantiene la temperatura fija en un valor T por encima de los
+puntos de congelación de A y de B. Se representará la presión P del sistema frente a xA,
+la fracción molar de uno de los componentes. $x_A$ es la fracción molar global de A en el
+sistema, es decir:</p>
+
+$x_A = n_{A,l} + n_{A,v} / n_{A,l} + n_{A,v} + n_{B,l} + n_{B,v}$
+<p>donde $n_A,l$ y $n_A,v$ son el numero de moles de A en la fase liquida y vapor, respectivamente.</p>
+<p>Para un sistema cerrado, $x_A$ es constante, aunque $n_{A,l}$ y $n_{A,v}$ pueden variar.  </p>
+
+<p style="text-align:justify;">Suponiendo que el sistema se encuentra en el interior de un cilindro cerrado por un
+pistón, que a su vez está inmerso en un baño termostático.</p>
+<img src="https://res.cloudinary.com/masita/image/upload/v1638958954/datos%20de%20equilibrio/LV_psu8rr.png" alt="LV">
+
+<p style="text-align:justify;">En un instante inicial se supondrá que la presión externa es tan elevado como para que el sistema sea totalmente
+líquido $($punto C$)$. Al disminuir la presión por debajo de ese punto, se alcanza un valor tal
+que el líquido comienza a evaporarse$($punto D$)$. En ese punto el líquido posee una
+composición $x_{A,l}$ que es igual a $x_A$, ya que sólo se ha evaporizado una cantidad infinitesimal
+de líquido.</p>
+
+<p>La ley de Raoult, relaciona las fracciones molares de la fase vapor con la
+composición del líquido a través de:</p>
+$P⋅x_{A,v}= P_A*⋅ x_{A,l}$ y $P⋅x_{B,v} = P_B*⋅ x_{B ,l}$
+
+<p>Donde $P_A*$ y $P_B*$ son las presiones de vapor de los líquidos puros A y B a la temperatura T,
+la presión P del sistema es igual a $P_A$ + $P_B$ y se ha supuesto que el vapor es ideal.</p>
+
+<p>A partir de la relación anterior se llega a:</p>
+
+$x_{A,v} / x_{B,v} = (x_{A,l}/ x_{B,l})⋅(P_A*/ P_B*)$ $($disolución ideal$)$
+
+<p>Sea A el componente más volátil, lo que significa que $P_A*>P_B*$. En este caso, la
+ecuación anterior queda como:</p>
+$x_{A,v}/ x_{B,v} > x_{A,l}/ x_{B,l}$
+
+<p style="text-align:justify;">El vapor en equilibrio con una disolución ideal está más enriquecido en el
+componente más volátil que el líquido. Las relaciones anteriores son válidas para cualquier
+presión en la que se produzca el equilibrio líquido-vapor.</p>
+<p style="text-align:justify;">Si se va disminuyendo la presión en forma isotérmica por debajo del punto D,
+haciendo que se evapore más líquido. Finalmente se alcanza el punto F, en el que se
+evaporiza la última gota de líquido. Para los puntos que están entre los puntos D y F, la fase
+líquida y gaseosa coexisten en equilibrio.</p>
+<p>Notar que como es un sistema cerrado, el valor de xA permanece constante a lo largo
+del proceso.</p>
+<p style="text-align:justify;">Se puede repetir este experimento muchas veces pero a distintas composición. Luego
+se unen los puntos D y F que se consiguen en cada caso y se obtiene una representación.</p>
+<p style="text-align:justify;">Para los puntos D’s se obtiene una recta. Esto viene dado porque en esos puntos el
+líquido de composición $x_{A,l}$ está empezando a evaporarse, entonces la presión del líquido es:</p>
+$P= P_A + P_B = P_A* ⋅x_{A,l} + P_B*⋅ x_{B,l} = P_A*⋅x_{A,l} +P_B*⋅(1- x_{A,l})$
+<p>Por lo tanto, </p>
+$P = (P_A* - P_B*)⋅x_{A,l} + P_B*$ $($disolución ideal$)$
+
+<p style="text-align:justify;">La curva de las F’s es mas complicada. A lo largo de ella, la última gota del líquido se
+está evaporando, por lo que $x_A$ global será igual a $x_{A,v}$, la fracción molar de A en el vapor.
+Por lo tanto la curva de F’s es una representación de la presión de vapor total P frente a $x_{A,v}$.
+</p>
+
+<p>De la ley de Raoult y sustituyendo el valor de P de la relación para los puntos D, se obtiene:
+</p>
+<p>$x_{A,v} = x_{A,l}⋅ P_A*/(P_A* - P_B*)⋅x_{A,l}+ P_B*$</p>
+<p>despejando $x_{A,l}$ se obtiene: </p>
+<p>$x_{A,l} = x_{A,v}⋅ P_B/(P_B* - P_A*)⋅x_{A,v}+ P_A$*</p>
+<p>Sustituyendo esta última expresión en P de la ley de Raoult, se llega a la ecuación de la
+presión:</p>
+<p>$P = P_B*⋅ P_A*/(P_B* - P_A*)⋅x_{A,v} + P_A$* &nbsp; $($disolución ideal$)$</p>
+<p>Esta es la ecuación de P vs. $x_{A,v}$ y corresponde a la curva para F’s.</p>
+<p>Entonces la curva superior corresponde a la curva de P frente a $x_{A,l}$ y la inferior
+corresponde a la curva de P frente a $x_{A,v}$</p>
+
+<figure>
+  <img src="https://res.cloudinary.com/masita/image/upload/v1638987558/datos%20de%20equilibrio/LV2_lqynhp.png" alt="LV2">
+  <figcaption>Fig 2. Diagrama de gases liquido-vapor de presion frente a composicion para una disolucion ideal a T constante. La linea inferior representa
+  la curva de P frente a $x_{A,v}$ mientras que la linea superior es la curva de P frente a $x_{A,l}$</figcaption>
+</figure>
+
+<p style="text-align:justify;">Al analizar el gráfico obtenido se puede observar, al reiniciar el proceso que se
+inicia en el punto C, donde P es lo suficientemente elevado como para que sólo exista
+líquido. Al ser un sistema cerrado $x_A$ permanece constante. Por lo tanto, viene representado
+por una línea vertical en el diagrama de P vs $x_A$.</p>
+
+<p style="text-align:justify;">En el punto D, con una presión igual a $P_D$, el líquido comienza a evaporarse, lo que
+se quiere saber en ese punto es la concentración de $x_{A,v}$ para que exista equilibrio entre líquido-vapor cuando la
+presión es igual a PD, ya que se sabe que $x_{A,l}$ es igual a $x_A$.</p>
+
+<p style="text-align:justify;">La curva inferior es una representación de la ecuación para los puntos F’s y da P en
+función de $x_{A,v}$ o si lo veo al revés $x_{A,v}$ esta dado en función de P, por lo tanto para calcular $x_{A,v}$
+para la presión $P_D$ debo ver el valor de la curva inferior para el cual P es igual a $P_D$. Este es el punto G, y
+da la composición del vapor que aparece en primer lugar.</p>
+
+<p style="text-align:justify;">Cuando la presión sigue disminuyendo, alcanza el punto $P_E$. En el punto E el
+sistema está formado por dos fases, una fase líquida y otra fase vapor en equilibrio. Para
+encontrar las composiciones de esa fase debo observar el valor que toma a esa presión la
+curva superior y la inferior para obtener los valores de $x_{A,l}$ $($punto H$)$ y $x_{A,v}$ $($punto I$)$,
+respectivamente. Por último, el punto F, con presión $P_F$, el líquido restante se evapora, en
+ese punto $x_A = x_{A,v}$ y $x_{A,l} = x_{A,4}$. Por debajo de F sólo se tiene vapor de composición $x_A$.
+</p>
+
+<p style="text-align:justify;">Por lo tanto, mientras la presión disminuye y el líquido se evapora en un sistema cerrado,
+$x_{A,l}$ se reduce desde D hasta J. Esto es debido a que A es más volátil que B. De la misma
+forma, mientras el líquido se evapora, $x_{A,v}$ disminuye desde G hasta F. Esto se debe a que el
+líquido que se evapora más tarde es más rico en el componente B. Para los estados en que
+las fases líquido y vapor están presentes simultáneamente, la presión P del sistema es igual
+a la presión de vapor del líquido.</p>
+
+<p>Una línea a lo largo de la cual permanece constante la composición, por ejemplo, la
+línea CDEF se denomina <b>isopleta</b>.</p>
+
+<p style="text-align:justify;">En resumen, el diagrama de fase líquido-vapor de P frente a $x_A$ a temperatura
+constante para dos líquidos que forman una disolución ideal presentan tres regiones. En
+cualquier punto por encima de las dos curvas sólo existe líquido. En cualquier punto por
+debajo de ambas curvas sólo existe vapor. En cualquier punto intermedio E entre las dos
+curvas existen dos fases: líquida, cuya composición viene dada por el punto H $(x_{A,l} = x_{A,3})$,
+y otra de vapor, cuya composición viene dada por el punto I$(x_{A,v}$ = $x_{A,2})$. La composición
+global del sistema bifásico viene dada por el valor de $x_A$ en el punto E.</p>
+
+<p style="text-align:justify;">La línea horizontal HEI se denomina línea de conjunción. La región de dos fases
+comprendidas entre las curvas del líquido y del vapor es una zona del diagrama de fases en
+la que es imposible la existencia de una fase homogénea única. Un punto de esta zona de
+dos fases da la composición global, y las composiciones de las dos fases en equilibrio
+vienen dadas por los puntos situados en los extremos de la línea de conjunción.</p>
+
+<p><b>3. Ecuaciones</b></p>
+<p><b>Fundamentos de la Absorcion:</b></p>
+<p style="text-align:justify;">El diámetro de una torre empacada de absorción depende de las cantidades de gas y líquido tratadas, de sus propiedades, y de
+la relación de una corriente con otra. La altura de la torre, y por lo tanto el volumen total del empaque, depende de la magnitud
+de los cambios deseados en la concentración y de la velocidad de transferencia de masa por unidad de volumen empacado. Por lo tanto,
+los cálculos de la altura de la torre se basan en balances de materia, balances de entalpía y en estimaciones de la fuerza impulsora
+y de los coeficientes de transferencia de materia.</p>
+<p></p>
+<p><b>a) Balance de materia</b></p>
+<p>Balance total de materia: $L_a + V = L + V_a$</p>
+<p>Para el componente A: $L_ax_a + V_by_b = L_bx_b + V_ay_a$</p>
+<p style="text-align:justify;"> </p>
+
+Ecuacion de la linea de operacion: $y = (L/V)x + (Vaya - Laxa)/V$
+
+<p><b>4. Aplicaciones</b></p>
+<p>Algunas de las aplicaciones de esta operación son:</p>
+<p>
+  <ul>
+    <li>Recuperar productos de corrientes gaseosas con fines de produccion</li>
+      <ul>
+        <li>Produccion industrial de disoluciones acidas o basicas en agua $($acidos clorhidrico, sulfurico y nitrico o hidroxido de amonio$)$</li>
+        <li>Recuperacion de gases acidos como $H_2S$, mercaptanos y $CO_2$ con disoluciones de aminas</li>
+      </ul>
+  </ul>
+</p>
+
+<p>
+  <ul>
+    <li>Control de emisiones de contaminantes a la atmosfera, reteniendo las sustancias contaminantes $($compuestos de azufre, clorados y fluorados$)$</li>
+    <ul>
+        <li>Eliminacion de $SO_2$ de gases de combustion con disoluciones acuosas de hidroxido de sodio</li>
+        <li>Eliminacion de oxidos de nitrogeno con disoluciones de agentes oxidentes</li>
+    </ul>
+  </ul>
+</p>
+
+5. Ejemplos
+5.1 Ejemplos teoricos
+1.
+2.
+5.2 Ejemplos faciles
+1.
+2.
+5.3 Ejemplos dificiles
+1.
+2.0
+6. Ejercicios VF
+1.
+2.
+3.
+4.
+7. Ejercicios Complete
+1.
+2.
+3.
+4.
+8. Ejercicios EL
+1.Un absorbedor debe separar 99% del soluto A de una corriente gaseosa que contiene 4%
+mol de A. Las soluciones de A en el solvente siguen la ley de Henry, y el aumento de temperatura del líquido es despreciable.
+a) Calcule NOy para la operación a 1 atm, utilizando
+un flujo de líquido libre de soluto 1.5 veces el valor mínimo. b) Para la misma velocidad
+de líquido, calcule NOy para la operación a 2 atm y a 4 atm. c) ¿Sería el efecto de la presión
+sobre NOy parcialmente compensado mediante una variación en HOy? (18.8)
+
+2. Un esquema para la eliminacion de H2S de una corriente de gas por absorcion con agua a 293K y 1.013x10^5 Pa
+esta siendo considerado en el tratamiento del efluente de un biodigestor. El gas inicialmente contendra 3.7mol%H2S,
+se desea que la corriente de gas que sale contenga solo 0.2% en moles de H2S. El agua utilizada como absorbente entrara en la parte superior
+de la torre y esta libre de H2S. A la temperatura y presion dadas del sistema, el equilibrio de H2S-agua obedecerea la ley de Henry seun la siguiente
+relacion:
+Y=48.3X
+1. Determine los moles de agua por mol de gas portador libre de H2S para la torre de absorcion a contracorriente si se utiliza 1.5 veces la relacion de
+flujo minimo
+2. Determine la composicion del gas absorbido en la corriente liquida a la salida.
+
+2.Un hidrocarburo relativamente no volátil que contiene 4% de mol de propano se extrae por acción directa de vapor sobrecalentado en
+una torre de extracción de platos, para reducir el contenido de propano a 0.2 %, la temperatura se mantiene constante a 422 K por
+medio de un calentamiento de la torre que opera a 2.026x105 Pa de presión. Se usa un total de 11.42 kmol de vapor directo para 300
+kmol de líquido de entrada total. La recta de operación vapor – líquido se puede representar mediante y=25x, donde “y” es la
+fracción mol de propano en el vapor y “x” es la fracción mol del propano en el hidrocarburo. El vapor se puede considerar como gas
+inerte y no se condensará. Grafique la línea de operación y de equilibrio y determine el número de platos teóricos.
+
+3. Un absorbedor es utilizado por una compañia industrial como un lavador de gases. Una mezcla diluida de aire-amoniaco contiene 5.0 mol %NH_3 se alimenta a la
+torre a contracorriente que inicialmente esta siendo alimentada por una corriente libre de amoniaco. El flujo del gas a la entrada es 136 mol/m^2*s y
+la corriente de agua libre de NH_3 es 3.4kg/m^2*s. Los datos de equilibrio estan relacionados por: y_NH_3 = 1.075xNH_3
+Si la corriente de gas a la salida contiene solamente 0.2% de amoniaco, determine:
+a. La composicion de la corriente de flujo en la salida.
+b. El radio actual de L_s/G_ si es mayor a la minima L_s/G_s
+c. La composicion de la corriente de liquido cuando la mezcla de gas contiene 2.0 mol% amoniaco.
+</p>
+{% endblock %}

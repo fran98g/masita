@@ -1,0 +1,496 @@
+{% extends "layout.html" %}
+
+{% block title %}balance{% endblock %}
+
+{% block body %}
+<h2>BALANCE DE MATERIA Y ENERGIA</h2>
+<h3>Explicación</h3>
+<p>Los balances de materia no son mas que la aplicacion de la ley de conservacion de la masa: "La materia no se crea ni se destruye".</p>
+<h4>Conceptos Básicos</h4>
+<p>Para efectuar un balance de materia de un proceso, primero hay que especificar en que consiste el sistema
+para el cual se hara el balance y establecer sus fronteras.</p>
+<p>Un <b>proceso</b> es una serie de acciones, operaciones o tratamientos que producen un resultado <b>$($producto$)$</b>.</p>
+<p>Un <b>sistema</b> se refiere a cualquier porcion arbitraria o la totalidad de un proceso establecida especificamente
+para su analisis.</p>
+<p>Un sistema <b>abierto</b> o <b>continuo</b> es aquel en que se transfiere material por la frontera del sistema.</p>
+<p>Un sistema <b>cerrado</b> o <b>por lotes</b> es aquel en el que no tiene lugar una transferencia semejante durante el
+intervalo de tiempo de interes.</p>
+
+<p>Teniendo en cuenta los términos del balance:</p>
+<div class="row">
+<div class="col">
+    acumulacion<br>de masa en el<br>sistema
+</div>
+<div class="col">
+    entrada de masa<br>por los limites<br>del sistema
+</div>
+<div class="col">
+    salida de masa<br>por los limites<br>del sistema
+</div>
+<div class="col">
+    generacion<br>de masa en<br>el sistema
+</div>
+<div class="col">
+    consumo<br>de masa en<br>el sistema
+</div>
+</div>
+
+<p>Los balances de materiales pueden ser:</p>
+<ul>
+    <li>
+        Balance total de masa
+    </li>
+    <li>
+        Balance por componente o agrupaciones de componentes
+    </li>
+    <li>
+        Balance por elementos $($ menos frecuentes $)$
+    </li>
+</ul>
+
+<p>Los balances de materiales pueden aplicarse a:</p>
+<ul>
+    <li>
+        Un equipo $($balance por equipo$)$
+    </li>
+    <li>
+        Un conjunto de equipos o proceso completo $($balance global$)$
+    </li>
+</ul>
+
+<p>Serie de pasos para realizar un balance global:</p>
+
+<ul>
+    <li>Identificar las corrientes que entran y salen al volumen de control.
+    <a>$($Estas corrientes son las que se toman para hacer el balance total o por componentes$)$.</a>
+    <a>Las corrientes que quedan dentro del volumen de control no se toman en cuenta en el balance global sea total o por componente.</a>
+    </li>
+    <li>
+        Establecer una base de calculo de 1 o 100.
+        <ul>
+            <b>Base de calculo:</b> es una referencia elegida para los calculos que se planean hacer en un problema particular.
+        </ul>
+        <ul>
+            <b>Metodos de resolucion de problemas:</b>
+            <ul>
+                <b>Directo:</b> se puede solucionar por medio de sumas, restas, multiplicaciones, divisiones.
+            </ul>
+            <ul>
+                <b>Algebraico:</b> se necesita resolver un sistema de ecuacion.
+            </ul>
+            <ul>
+                <b>Elemento de correlacion o enlace:</b> se toma como base o referencia un material $($elementos, compuestos o mezclas$)$ cuya
+                composicion quimica y masa permanece inalterable o invariable a lo largo de todo el proceso o en su paso por un equipo
+                o un conjunto de equipos determinados.
+            </ul>
+
+        </ul>
+    </li>
+    <li>
+        Hacer un diagrama, colocar todos los datos disponibles.
+    </li>
+    <li>
+        Determinar las masas y composiciones que se conocen o que pueden determinarse facilmente.
+    </li>
+    <li>
+        Establecer las ecuaciones de balance.
+    </li>
+    <li>
+        Resolver las ecuaciones y verificar las respuestas introduciendolas en las euaciones.
+    </li>
+
+<p><b>RECORDAR:</b></p>
+<p>El numero de variables cuyo valor se desconoce es igual al numero de ecuaciones independientes.</p>
+
+<p><b>Simbologia:</b></p>
+$m_i = $ flujo masico donde el subindice i identifica el componente especifico
+<p><ol>F = flujo masico total</ol></p>
+<p><ol>$ n_i = $ fraccion molar</ol></p>
+<p><ol>G = numero total de moles</ol></p>
+
+<p>
+    <ol><b>Recirculacion o Reciclaje:</b></ol>
+    Implica regresar materia o energía desde un punto corrriente abajo de la unidad de proceso a
+    dicha unidad o a una unidad situada corriente arriba de esa unidad.
+    En una operacion de recirculacion, la alimentacion total o combinada se compone de una mezcla
+    de carga nueva o neta, con material ya tratado.
+    Se usa para incrementar rendimientos, enriquecer productos, conservar calor o enmendar operaciones.
+</p>
+
+<p>
+    <ol><b>Purga:</b></ol>
+    Es un flujo que se utiliza para eliminar una acumulacion de sustancias inertes o indeseables que
+    de otra manera se acumularian en el flujo de recirculacion.
+    El material purgado puede pasar por algun proceso especial para separar las impurezas y recuperar
+    los componentes utiles o puede descartarse si tal recuperacion es demasiado costosa.
+</p>
+
+<p>
+    <ol><b>Derivacion:</b></ol>
+    Una corriente de derivacion es una corriente que omite una o mas etapas del proceso y que pasa
+    directamente a otra etapa posterior.
+    Se puede usar un flujo de derivacion para controlar la composicion de un flujo de salida.
+</p>
+
+<p>
+    <ol><b>Absorcion:</b></ol>
+    Es la separacion de uno o mas componentes de una mezcla gaseosa por disolucion de estos en un
+    liquido llamado absorbente. $($componente soluble se mueve desde la fase gaseosa a la fase liquida$)$.
+    <ul>Absorcion fisica:</ul>
+    El componente gaseoso solo se disuelve en el liquido.
+    <ul>Absorcion quimica:</ul>
+    El componente gaseoso disuelto en el liquido reacciona con un componente del liquido.
+</p>
+
+<p>
+    <ol><b>Desorcion:</b></ol>
+    Cuando un gas absorbido en un liquido se separa de aquel por medio de otro gas $($no soluble en el
+    liquido$)$.
+    Los equipos empleados en la absorcion reciben los nombres de absorbedores.
+    Se emplean como absorbedores torres cilindricas que pueden ser de relleno o empacadas, de platos y de spray.
+    Tambien hay absorbedores centrifugos que usan la fuerza centrifuga para poner en contacto el gas con el liquido.
+</p>
+
+<p>
+    <ol><b>Cristalizacion:</b></ol>
+    Es un proceso por el cual a partir de un gas, un liquido o una disolucion los iones, atomos o moleculas
+    establecen enlaces para formar una red cristalina $($cristal$)$.
+    La mayor parte de las aplicaciones industriales de la operacion incluyen la cristalizacion a partir de soluciones.
+    Todo compuesto quimico disuelto en algun solvente en fase liquida puede ser precipitada por cristalizacion bajo ciertas
+    condiciones de concentracion y temperatura.
+
+<ol>El procedimiento de cristalizacion en condiciones industriales consta de las siguientes operaciones:</ol>
+    <ul>
+        -Cristalizacion propiamente dicha
+    </ul>
+    <ul>
+        -Separacion de los cristales de la solucion madre $($filtros o centrifugas$)$
+    </ul>
+    <ul>
+        -Re-cristalizacion $($en caso de necesidad$)$
+    </ul>
+    <ul>
+        -Lavado y secado $($retirar el resto del solvente y material de lavado$)$ de los cristales
+    </ul>
+<a>Se llama <b>solucion madre</b> a la que resta despues de que de ella se han desprendido los cristales.</a>
+<a>La solucion madre siempre sale saturada.</a>
+
+    <ol><b>Solubilidad:</b></ol>
+    <ul>
+        -Cantidad maxima de una sustancia $($soluto$)$ que puede disolverse en una cantidad determinada
+    de otra sustancia $($disolvente$)$ a una temperatura y presion determinadas.
+    </ul>
+    <ul>
+        -Varia con: caracteristicas del soluto y solvente, presion y temperatura.
+    </ul>
+    <ul>
+        Se expresa como:
+        <ul>
+            -Masa de soluto disuelto por masa de solvente dado.
+        </ul>
+        <ul>
+            -Masa de soluto disuelto por volumen de solucion saturada.
+        </ul>
+    </ul>
+
+    <ol><b>Soluciones saturadas:</b></ol>
+    <ul>
+        -Tienen disuelta la cantidad de soluto que indica la solubilidad a la temperatura y presion
+    a la que se encuentra la solucion.
+    </ul>
+    <ul>
+        -Si la solucion esta saturada, la solubilidad puede usarse para calcular la fraccion de soluto
+    en la misma:
+    <ul>
+        $w_{soluto}$ $=$ masa soluto $/$ masa soluto $+$ masa disolvente
+    </ul>
+    </ul>
+
+    <il>
+        Para lograr la cristalizacion la solucion debe sobresaturarse.
+    </il>
+
+    <ol><b>Solucion sobresaturada:</b></ol>
+    <ul>
+        tiene mas cantidad del soluto de la que puede disolver.
+    </ul>
+
+    <ol><b>Metodos de sobresaturacion:</b></ol>
+    <ul>
+        -Evaporacion del disolvente hasta que la solucion este sobresaturada.
+    </ul>
+    <ul>
+        -Disminucion de la temperatura para lograr condiciones de menor solubilidad del soluto en la sollucion.
+    </ul>
+    <ul>
+        Los equipos usados para la cristalizacion se llaman cristalizadores.
+    </ul>
+
+<p>
+    <ol><b>Destilacion:</b></ol>
+    <p>
+        Los vapores que se producen se condensan al salir del equipo de destilacion.
+        La destilacion se realiza en un rango de temperatura.
+        Consiste en la separacion de uno o mas componentes de una mezcla liquida por vaporizacion
+    parcial de la misma.
+    La composicion del vapor obtenido es distinta de la composicion del liquido de partida.
+    La composicion del liquido de partida tambien cambia.
+    Tanto el liquido como el vapor tienen los mismos componentes.
+    </p>
+    <ul>
+        Destilado: producto que sale por la parte superior $($del condensador$)$
+    </ul>
+    <ul>
+        Residuo: producto liquido que sale por el fondo $($del rehervidor$)$
+    </ul>
+    <ul>
+        Destilacion simple: Destilacion realizada en una etapa.
+    </ul>
+    <ul>
+        Destilacion fraccionada o rectificacion: Es una operacion de destilacion a contracorriente en varias etapas.
+        <ul>
+            Se requiere de 3 equipos: la torre de fraccionamiento y 2 intercambiadores de calor $($rehervidor, condensador$)$.
+        </ul>
+        <ul>
+            La alimentacion se introduce de modo mas o menos centrado.
+        </ul>
+        <ul>
+            El vapor se eleva en la torre, y se pone en contacto con el liquido que se recircula, para eliminar o absorber
+            el componente menos volatil.
+        </ul>
+        <ul>
+            El liquido que se recircula se obtiene condensado el vapor que sale por la parte superior y se denomina reflujo.
+        </ul>
+        <ul>
+            El liquido que se retira continuamente por la parte superior es el destilado.
+        </ul>
+        <ul>
+            El destilado puede ser un vapor o un liquido.
+        </ul>
+        <ul>
+            El liquido eliminado, enriquecido con el componente menos volatil, es el residuo, lodos o fondos.
+        </ul>
+        <ul>
+            Dentro de la torre, los liquidos y los vapores siempre estan en sus puntos de burbuja y de rocio, respectivamente,
+            de manera que las temperaturas mas elevadas se encuentran en el fondo y las menores en la parte superior.
+        </ul>
+        <ul>
+            Relacion de reflujo = moles de destilado / moles de reflujo
+        </ul>
+        <ul>
+            En la seccion inferior de la torre, el liquido se desorbe del componente volatil mediante contacto con vapor.
+            El vapor en esta seccion se produce por la evaporacion parcial del liquido que sale en el fondo.
+            La evaporacion se realiza en el rehervidor.
+        </ul>
+        </ul>
+    </ul>
+
+<p>
+    <ol><b>Secado:</b></ol>
+    <ul>
+        El solido perdera humedad por evaporacion hasta que la presion parcial de la humedad en el gas sea igual a la presion
+    de vapor de la humedad que contiene el solido.
+    <ul>
+        En el secado se identifican tres componentes:
+    </ul>
+        <ul>
+            -El solido libre de humedad $($solido seco$)$.
+        </ul>
+        <ul>
+            -El gas libre de humedad $($gas seco$)$.
+        </ul>
+        <ul>
+            -La humedad.
+        </ul>
+<p>
+Se refiere a la eliminacion de humedad en una sustancia.
+Nos limitaremos a la eliminacion de humedad de solidos por evaporacion en una corriente gaseosa.
+La cantidad de humedad en el solido se puede expresar como:
+    <ul>
+        -masa de humedad / masa solido humedo $($base humeda$)$
+    </ul>
+    <ul>
+        -masa de humedad / masa solido seco $($base seca$)$
+    </ul>
+</p>
+
+<p>
+    <ol><b>Extraccion solido-liquido:</b></ol>
+    <p>
+        Disolucion preferente de uno o mas componentes de una mezcla solida por contacto con un liquido.
+    </p>
+    <ul>
+        <b>Aspectos basicos:</b>
+    </ul>
+        <ul>
+            -Disolvente: liquido de extraccion
+        </ul>
+        <ul>
+            -Soluto: sustancia que se extrae
+        </ul>
+        <ul>
+            -Inerte: el solido que no se extrae
+        </ul>
+        <ul>
+            -Flujo superior o extracto: solucion que se separa de los solidos, cuando estos han sido lixiviados.
+        </ul>
+        <ul>
+            -Refinado, flujo inferior o lodos: solido lixiviado y la solucion retenida por el mismo.
+        </ul>
+    <ul>
+        Composicion del refinado suele expresarse como:
+    </ul>
+        <ul>
+            -K = La cantidad de disolucion adherida / cantidad solido inerte $($K constante o relacion de retencion$)$
+        </ul>
+        <ul>
+            -cantidad de disolvente adherido / cantidad solido inerte
+        </ul>
+</p>
+
+<p>
+    <ol><b>Lixiviacion en una sola etapa:</b></ol>
+    <p>
+        Se pone en contacto a todo el solido y todo el disolvente, y luego se separa la disolucion del solido.
+    </p>
+    <ul>
+        Generalmente se realiza en dos equipos:
+    </ul>
+    <ul>
+        -Un mezclador: entran la alimentacion y el disolvente, y sale una mezcla de estas dos corrientes.
+    </ul>
+    <ul>
+        -Un asentador: entra la mezcla que sale del mezclador, y sale el refinado y el extracto.
+    </ul>
+    <ul>
+        Lxiviacion en contacto multiple en corriente cruzada:
+    </ul>
+    <ul>
+        Repeticion del procedimiento empleado para una etapa en etapas sucesivas.
+    </ul>
+</p>
+
+<p>
+    <ol><b>EJEMPLOS</b></ol>
+    <p>
+        <b>Sistema de remoción de acetona.</b>
+        <p>
+            En la figura se muestra un sistema para remover vapores de acetona.
+            Con base a la informacion mostrada en el esquema del proceso:
+        </p>
+    <ul>
+        a) ¿Cual es la fraccion de acetona en la corriente G?
+    </ul>
+    <ul>
+        b) Plantee los balances totales de masa y los balances de masa para componentes en:
+    el destilador; el absorbedor; el volumen de control formado por destilador-condensador, absorbedor-destilador
+    y el conjunto de los tres equipos.
+    </ul>
+<img src="https://res.cloudinary.com/masita/image/upload/v1638330489/balance/remoacetona_buovmg.png" alt="Sistema de remocion de acetona">
+    </p>
+    <ul>
+
+        <p>
+            <b>SOLUCION</b>
+    </ul>
+<img src="https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona5_um37i1.png" alt="Volumenes de control">
+    <ul>
+        <b>Resultados de todos los volumenes de control.</b>
+    </ul>
+    <img src="https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona2_zcibul.png" alt="Volumen Control por Equipos">
+        <ul>
+            1$)$ V.C.I $($Balance por equipos, columna de destilacion$)$
+            <ul>
+                $B. Total: F = B + C$
+            </ul>
+            <ul>
+                $B. Acetona: 0.19F = 0.04B + w_a^c*C$
+            </ul>
+            <ul>
+                $B. Agua: 0.81F = 0.96B + w_H2O^c*C$
+            </ul>
+        </ul>
+        <ul>
+            2$)$ V.C.II $($Balance por equipos, columna de absorcion$)$
+            <ul>
+                $B. Total: G + W = F + A$
+            </ul>
+            <ul>
+                &emsp;&emsp;&emsp;&emsp;&emsp;100 + 100 = F + A
+            </ul>
+            <ul>
+                $B. Aire: (0.95)(100) = 0.995A$
+            </ul>
+            <ul>
+                $B. Acetona: (0.03)(100) = 0.19F$
+            </ul>
+            <ul>
+                $B. Agua: (0.02)(100) + 100 = 0.81F + 0.005A$
+            </ul>
+        </ul>
+        </p>
+    <img src="https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona3_iai3c5.png" alt="Volumen Control Equipos">
+    <ul>
+        3$)$ V.C.III $($Balance destilador - condensador$)$
+        <ul>
+            $B. Total: F = B + D$
+        </ul>
+        <ul>
+            $B. Acetona: 0.19F = 0.04B + 0.99D$
+        </ul>
+        <ul>
+            $B. Agua: 0.81F = 0.96B + 0.01D$
+        </ul>
+    </ul>
+    <ul>
+        4$)$ V.C.IV $($Balance absorbedor - destilador$)$
+        <ul>
+            $B. Total: G + W = A + B + C$
+        </ul>
+        <ul>
+            &emsp;100 + 100 = A + B + C
+        </ul>
+        <ul>
+            $B. Aire: (0.95)(100) = 0.995A$
+        </ul>
+        <ul>$B. Acetona: (0.03)(100) = 0.04B + w_A^C*C$</ul>
+        <ul>
+            $B. Agua: (0.02)(100) + 100 = 0.005a + 0.96b + w_{H2O}^C*C$
+        </ul>
+    </ul>
+    <img src="https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona4_phdu0w.png" alt="Balance Global">
+    <ul>
+        5$)$ V.C.V. $($Balance Global$)$
+        <ul>
+            $B. Total: G + W = A + B + D$
+        </ul>
+        <ul>
+            &emsp;100 + 100 = A + B + D
+        </ul>
+        <ul>
+            $B. Aire: (0.95)(100) = 0.995A$
+        </ul>
+        <ul>
+            $B. Acetona: (0.03)(100) = 0.04B + 0.99F$
+        </ul>
+        <ul>
+            $B. Agua: (0.02)(100) + 100 = 0.005A + 0.96B + 0.01D$
+        </ul>
+    </ul>
+
+<p>
+    2. Una columna de rectificacion separa 20,000 kg/h de una mezcla que contiene 15% de etanol y 85% agua en peso, con
+objeto de obtener un producto destilado con 90% en mol de etanol y unos fondos con el 1.5% de etanol en mol. Se utiliza
+un reflujo de 3.5 kgmol/kgmol de producto destilado.
+Los vapores que entran al condensador estan saturados y salen del mismo como liquido saturado.
+Los productos de fondo y la alimentacion tambien estan saturados.
+<ul>
+    Calcular:
+    <ul>
+        a$)$ El calor que debe quitarse en el condensador y el agua requerida para ello si esta entra a 25°C y sale a 45°C
+    </ul>
+    <ul>b$)$ El vapor necesario en el rehervidor si se usa vapor con una presion manometrica de $1.4kg/cm^2$.</ul>
+</ul>
+</p>
+</p>
+{% endblock %}

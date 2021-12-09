@@ -1,0 +1,322 @@
+1. Explicación
+Los balances de materia no son mas que la aplicacion de la ley de conservacion de la masa: "La materia
+no se crea ni se destruye".
+Conceptos Basicos
+Para efectuar un balance de materia de un proceso, primero hay que especificar en que consiste el sistema
+para el cual se hara el balance y establecer sus fronteras.
+Un proceso es una serie de acciones, operaciones o tratamientos que producen un resultado [producto].
+Un sistema se refiere a cualquier porcion arbitraria o la totalidad de un proceso establecida especificamente
+para su analisis.
+Un sistema abierto (o continuo) es aquel en que se transfiere material por la frontera del sistema.
+Un sistema cerrado (o por lotes) es aquel en el que no tiene lugar una transferencia semejante durante el
+intervalo de tiempo de interes.
+Teniendo en cuenta los terminos del balance:
+(en estado no estacionario)
+{Acumulacion de masa en el sistema} = {Entrada de masa por los limites del sistema} -
+{Salida de masa por los limites del sistema} + {Generacion de masa en el sistema} - {Consumo de masa en el sistema}
+                                                    (cuando no hay reaccion quimica)
+    Acumulacion = 0 -> estado estacionario
+    Generacion = Consumo = 0 -> no hay reaccion quimica
+    Entrada = Salida = 0 -> sistema cerrado
+
+Los balances de materiales pueden ser:
+-Balance total de masa: en base a la cantidad total de todos los compuestos en la corriente.
+-Balance por componente o agrupaciones de componentes: en base a un componente individual en la corriente.
+-Balance por elementos (menos frecuentes)
+
+Los balances de materiales pueden aplicarse a:
+-Un equipo (balance por equipo)
+-Un conjunto de equipos o proceso completo (balance global)
+
+Serie de pasos para realizar un balance global:
+1. Identificar las corrientes que entran y salen al volumen de control. (Estas corrientes son las que se toman para
+hacer el balance total o por componentes).
+Las corrientes que quedan dentro del volumen de control no se toman en cuenta en el balance global sea total o por
+componente.
+2. Establecer una base de calculo de 1 o 100.
+[Base de calculo: es una referencia elegida para los calculos que se planean hacer en un problema particular.
+Metodos de resolucion de problemas:
+-Directo: se puede solucionar por medio de sumas, restas, multiplicaciones, divisiones.
+-Algebraico: se necesita resolver un sistema de ecuacion.
+/Elemento de correlacion o enlace: se toma como base o referencia un material (elementos, compuestos o mezclas) cuya
+composicion quimica y masa permanece inalterable o invariable a lo largo de todo el proceso o en su paso por un equipo
+o un conjunto de equipos determinados.
+3. Hacer un diagrama, colocar todos los datos disponibles.
+4. Determinar las masas y composiciones que se conocen o que pueden determinarse facilmente.
+5. Establecer las ecuaciones de balance.
+6. Resolver las ecuaciones y verificar las respuestas introduciendolas en las euaciones.
+
+RECORDAR:
+El numero de variables cuyo valor se desconoce es igual al numero de ecuaciones independientes.
+
+Simbologia:
+mi = flujo masico donde el subindice i identifica el componente especifico
+F = flujo masico total
+ni = fraccion molar
+G = numero total de moles
+
+Recirculacion o Reciclaje:
+Implica regresar materia o energía desde un punto corrriente abajo de la unidad de proceso a
+dicha unidad o a una unidad situada corriente arriba de esa unidad.
+En una operacion de recirculacion, la alimentacion total o combinada se compone de una mezcla
+de carga nueva o neta, con material ya tratado.
+Se usa para incrementar rendimientos, enriquecer productos, conservar calor o enmendar operaciones.
+
+Purga:
+Es un flujo que se utiliza para eliminar una acumulacion de sustancias inertes o indeseables que
+de otra manera se acumularian en el flujo de recirculacion.
+El material purgado puede pasar por algun proceso especial para separar las impurezas y recuperar
+los componentes utiles o puede descartarse si tal recuperacion es demasiado costosa.
+
+Derivacion:
+Una corriente de derivacion es una corriente que omite una o mas etapas del proceso y que pasa
+directamente a otra etapa posterior.
+Se puede usar un flujo de derivacion para controlar la composicion de un flujo de salida.
+
+Absorcion:
+Es la separacion de uno o mas componentes de una mezcla gaseosa por disolucion de estos en un
+liquido llamado absorbente. (componente soluble se mueve desde la fase gaseosa a la fase liquida).
+    Absorcion fisica:
+    El componente gaseoso solo se disuelve en el liquido.
+    Absorcion quimica:
+    El componente gaseoso disuelto en el liquido reacciona con un componente del liquido.
+
+Desorcion:
+Cuando un gas absorbido en un liquido se separa de aquel por medio de otro gas (no soluble en el
+liquido).
+
+Los equipos empleados en la absorcion reciben los nombres de absorbedores.
+Se emplean como absorbedores torres cilindricas que pueden ser de relleno o empacadas, de platos y de spray.
+Tambien hay absorbedores centrifugos que usan la fuerza centrifuga para poner en contacto el gas con el liquido.
+
+Cristalizacion:
+Es un proceso por el cual a partir de un gas, un liquido o una disolucion los iones, atomos o moleculas
+establecen enlaces para formar una red cristalina (cristal).
+La mayor parte de las aplicaciones industriales de la operacion incluyen la cristalizacion a partir de soluciones.
+Todo compuesto quimico disuelto en algun solvente en fase liquida puede ser precipitada por cristalizacion bajo ciertas
+condiciones de concentracion y temperatura.
+
+El procedimiento de cristalizacion en condiciones industriales consta de las siguientes operaciones:
+    -Cristalizacion propiamente dicha
+    -Separacion de los cristales de la solucion madre (filtros o centrifugas)
+    -Re-cristalizacion (en caso de necesidad)
+    -Lavado y secado (retirar el resto del solvente y material de lavado) de los cristales
+Se llama solucion madre a la que resta despues de que de ella se han desprendido los cristales
+La solucion madre siempre sale saturada.
+
+Solubilidad:
+    -Cantidad maxima de una sustancia (soluto) que puede disolverse en una cantidad determinada
+    de otra sustancia (disolvente) a una temperatura y presion determinadas.
+    -Varia con: caracteristicas del soluto y solvente, presion y temperatura.
+    Se expresa como:
+    -Masa de soluto disuelto por masa de solvente dado.
+    -Masa de soluto disuelto por volumen de solucion saturada.
+Soluciones saturadas:
+    -Tienen disuelta la cantidad de soluto que indica la solubilidad a la temperatura y presion
+    a la que se encuentra la solucion.
+    -Si la solucion esta saturada, la solubilidad puede usarse para calcular la fraccion de soluto
+    en la misma:
+    w_soluto = masa soluto / masa soluto + masa disolvente
+
+Para lograr la cristalizacion la solucion debe sobresaturarse.
+Solucion sobresaturada:
+tiene mas cantidad del soluto de la que puede disolver.
+Metodos de sobresaturacion:
+    -Evaporacion del disolvente hasta que la solucion este sobresaturada.
+    -Disminucion de la temperatura para lograr condiciones de menor solubilidad del soluto en la sollucion.
+
+Los equipos usados para la cristalizacion se llaman cristalizadores.
+
+Destilacion:
+Los vapores que se producen se condensan al salir del equipo de destilacion.
+Destilado: producto que sale por la parte superior (del condensador)
+Residuo: producto liquido que sale por el fondo (del rehervidor)
+La destilacion se realiza en un rango de temperatura
+
+Consiste en la separacion de uno o mas componentes de una mezcla liquida por vaporizacion
+parcial de la misma.
+La composicion del vapor obtenido es distinta de la composicion del liquido de partida.
+La composicion del liquido de partida tambien cambia.
+Tanto el liquido como el vapor tienen los mismos componentes.
+
+Destilacion simple: Destilacion realizada en una etapa.
+Destilacion fraccionada o rectificacion: Es una operacion de destilacion a contracorriente en varias etapas.
+Se requiere de 3 equipos: la torre de fraccionamiento y 2 intercambiadores de calor (rehervidor, condensador).
+La alimentacion se introduce de modo mas o menos centrado.
+El vapor se eleva en la torre, y se pone en contacto con el liquido que se recircula, para eliminar o absorber
+el componente menos volatil.
+El liquido que se recircula se obtiene condensado el vapor que sale por la parte superior y se denomina reflujo.
+El liquido que se retira continuamente por la parte superior es el destilado.
+El destilado puede ser un vapor o un liquido.
+El liquido eliminado, enriquecido con el componente menos volatil, es el residuo, lodos o fondos.
+Dentro de la torre, los liquidos y los vapores siempre estan en sus puntos de burbuja y de rocio, respectivamente,
+de manera que las temperaturas mas elevadas se encuentran en el fondo y las menores en la parte superior.
+
+Relacion de reflujo = moles de destilado / moles de reflujo
+
+En la seccion inferior de la torre, el liquido se desorbe del componente volatil mediante contacto con vapor.
+El vapor en esta seccion se produce por la evaporacion parcial del liquido que sale en el fondo.
+La evaporacion se realiza en el rehervidor.
+
+Secado:
+El solido perdera humedad por evaporacion hasta que la presion parcial de la humedad en el gas sea igual a la presion
+de vapor de la humedad que contiene el solido.
+En el secado se identifican tres componentes:
+    -El solido libre de humedad (solido seco).
+    -El gas libre de humedad (gas seco).
+    -La humedad.
+Se refiere a la eliminacion de humedad en una sustancia.
+Nos limitaremos a la eliminacion de humedad de solidos por evaporacion en una corriente gaseosa.
+La cantidad de humedad en el solido se puede expresar como:
+    -masa de humedad / masa solido humedo (base humeda)
+    -masa de humedad / masa solido seco (base seca)
+
+Extraccion solido-liquido:
+Disolucion preferente de uno o mas componentes de una mezcla solida por contacto con un liquido.
+
+Aspectos basicos:
+    -Disolvente: liquido de extraccion
+    -Soluto: sustancia que se extrae
+    -Inerte: el solido que no se extrae
+    -Flujo superior o extracto: solucion que se separa de los solidos, cuando estos han sido lixiviados.
+    -Refinado, flujo inferior o lodos: solido lixiviado y la solucion retenida por el mismo.
+Composicion del refinado suele expresarse como:
+-K = La cantidad de disolucion adherida / cantidad solido inerte (K constante o relacion de retencion)
+-cantidad de disolvente adherido / cantidad solido inerte
+
+Lixiviacion en una sola etapa:Se pone en contacto a todo el solido y todo el disolvente, y luego se separa la disolucion del solido
+Generalmente se realiza en dos equipos:
+-Un mezclador: entran la alimentacion y el disolvente, y sale una mezcla de estas dos corrientes.
+-Un asentador: entra la mezcla que sale del mezclador, y sale el refinado y el extracto.
+
+Lxiviacion en contacto multiple en corriente cruzada:
+Repeticion del procedimiento empleado para una etapa en etapas sucesivas.
+
+EJEMPLOS
+1. Sistema de remoción de acetona. En la figura se muestra un sistema para remover vapores de acetona.
+Con base a la informacion mostrada en el esquema del proceso:
+a) ¿Cual es la fraccion de acetona en la corriente G?
+b) Plantee los balances totales de masa y los balances de masa para componentes en:
+el destilador; el absorbedor; el volumen de control formado por destilador-condensador, absorbedor-destilador
+y el conjunto de los tres equipos.
+https://res.cloudinary.com/masita/image/upload/v1638330489/balance/remoacetona_buovmg.png
+
+
+https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona5_um37i1.png
+Resultados de todos los volumenes de control.
+
+https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona2_zcibul.png Volumen de control por equipos
+1) V.C.I (Balance por equipos, columna de destilacion)
+B. Total: F = B + C
+B. Acetona: 0.19F = 0.04B + w_a^c*C
+B. Agua: 0.81F = 0.96B + w_H_2O^c*C
+
+2) V.C.II (Balance por equipos, columna de absorcion)
+B. Total: G + W = F + A
+          100 + 100 = F + A
+B. Aire: (0.95)(100) = 0.995A
+B. Acetona: (0.03)(100) = 0.19F
+B. Agua: (0.02)(100) + 100 = 0.81F + 0.005A
+
+https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona3_iai3c5.png
+3) V.C.III (Balance destilador - condensador)
+B. Total: F = B + D
+B. Acetona: 0.19F = 0.04B + 0.99D
+B. Agua: 0.81F = 0.96B + 0.01D
+
+4) V.C.IV (Balance absorbedor - destilador)
+B. Total: G + W = A + B + C
+          100 + 100 = A + B + C
+B. Aire: (0.95)(100) = 0.995A
+B. Acetona: (0.03)(100) = 0.04B + w_A^C*C
+B. Agua: (0.02)(100) + 100 = 0.005a + 0.96b + w_H2O^C*C
+
+https://res.cloudinary.com/masita/image/upload/v1638333034/balance/remoacetona4_phdu0w.png
+5) V.C.V. (Balance Global)
+B. TotaL: G + W = A + B + D
+         100 + 100 = A + B + D
+B. Aire: (0.95)(100) = 0.995A
+B. Acetona: (0.03)(100) = 0.04B + 0.99F
+B. Agua: (0.02)(100) + 100 = 0.005A + 0.96B + 0.01D
+
+2. Una columna de rectificacion separa 20,000 kg/h de una mezcla que contiene 15% de etanol y 85% agua en peso, con
+objeto de obtener un producto destilado con 90% en mol de etanol y unos fondos con el 1.5% de etanol en mol. Se utiliza
+un reflujo de 3.5 kgmol/kgmol de producto destilado.
+Los vapores que entran al condensador estan saturados y salen del mismo como liquido saturado.
+Los productos de fondo y la alimentacion tambien estan saturados.
+Calcular:
+a) El calor que debe quitarse en el condensador y el agua requerida para ello si esta entra a 25°C y sale a 45°C
+b) El vapor necesario en el rehervidor si se usa vapor con una presion manometrica de 1.4kg/cm^2.
+
+
+
+
+
+
+Balance de materia con reaccion quimica:
+En una reaccion quimica la masa permanece constante, pero no necesariamente los moles.
+       A + B -> 2C + D
+moles: 1 + 1 =  2  + 1
+
+En una reaccion quimica se mantienen constantes:
+    -La masa total
+    -La masa y los moles de cada elemento quimico, asi como de cualquier radical o compuesto que se mantenga inalterable.
+
+Cuando hay una reaccion quimica los componentes cambian, por esto al hacer el balance de masa por componente hay que incluir los
+terminos de generacion y consumo.
+La generacion y el consumo se calcula tomando en cuenta la relacion de reactivos y productos indicada por la ecuacion quimica balanceada de la reaccion.
+Cuando se trabaja con reaccion quimica es preferible para muchos calculos usar moles en lugar de unidades de masa.
+
+Los equipos en los que se realizan las reacciones quimicas se llaman reactores, suelen ser tanques agitados.
+
+Factor de exceso = (1 + % de exceso / 100)
+% selectividad = cantidad obtenida del producto deseado / cantidad obtenida del producto no deseado * 100
+% exceso = cantidad alimentada - cantidad teorica / cantidad teorica * 100
+% conversion = cantidad reactivo limitante que reacciono / cantidad reactivo limitante alimentado * 100
+% rendimiento = rendimiento real / rendimiento teorico * 100
+rendimiento real: cantidad obtenida de un producto
+rendimiento teorico: cantidad que se obtiene de un producto cuando todo el reactivo limitante reacciona
+combustion: reaccion quimica exotermica entre sustancias inflamables con el oxigeno, que produce gases a altas temperaturas
+Una reaccion de combustion produce CO2, agua (si el combustible tiene hidrogeno), SO2 (S + O -> SO2 si el combustible contiene S)
+si la combustion es completa.
+Combustion completa: cuando todo el carbono del combustible forma CO2.
+Combustion incompleta: todo o parte del carbono del combustible queda forma CO.
+Temperatura de inflamacion: la temperatura a la que un combustible comienza a arder con la ayuda de una llama.
+Gases de chimenea o gases residuales de la combustion: todos los gases, que resultan de un proceso de combustion, incluido el vapor
+de agua, a veces denominado en base humeda.
+Analisis de Orsat o en base seca: todos los gases que resultan de un proceso de combustion pero sin incluir el vapor de agua.
+
+% aire exceso = % oxigeno en exceso
+= 100 * (exceso de aire / aire requerido)
+= 100 * (exceso de oxigeno / 0.21) / (oxigeno requerido / 0.21)
+Composicion molar del aire:
+79% Nitrogeno, 21% Oxigeno
+
+En los balances por componentes:
+Los flujos que entran y salen de un componente son iguales a:
+    -Flujo total molar de la corriente * fraccion molar del componente en la corriente
+    -Flujo total molar del componente
+Los flujos de un componente que reaccionan o se producen se calcula:
+    -A partir de la ecuacion quimica balanceada.
+
+Para el peso atomico o peso molecular el valor numerico se mantiene indistintamente de las unidades de masa.
+
+
+Primeramente debemos conocer:
+1. Gases de chimenea o gases residuales de la combustion:
+todos los gases que resulan de un proceso de combustion, incluido el vapor de agua, a veces denominado en base humeda.
+2. Analisis de Orsat o en base seca:
+todos los gases que resultan de un proceso de combustion pero sin incluir el vapor de agua.
+[El analisis de Orsat se refiere a un tipo de aparato para analisis de gases en el que los volumenes de gases respectivos
+se miden sobre agua, y en equilibrio con ella; pot tanto, todos los componentes estan saturados con vapor de agua. El resultado neto del analisis
+se obtiene al eliminar el agua como componente]
+3. Aire teorico (u oxigeno teorico):
+la cantidad de aire (u oxigeno) que se debe introducir en el proceso para lograr la combustion completa.
+Esta cantidad tambien se conoce como aire (u oxigeno) requerido.
+4. Aire en exceso (u oxigeno en exceso):
+es la cantidad de aire (u oxigeno) en exceso de la requerida para una combustion completa.
+
+La cantidad calculada de aire en exceso no depende de que tanto material se quema realmente, sino de lo que puede quemarse.
+
+PAG 179 HIMMELBLAU
+

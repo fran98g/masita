@@ -1,0 +1,60 @@
+1. Explicación
+
+2. Diagramas de equilibrio
+
+3. Ecuaciones
+
+4. Aplicaciones
+
+5. Ejemplos
+5.1 Ejemplos teoricos
+1.
+2.
+5.2 Ejemplos faciles
+1.
+2.
+5.3 Ejemplos dificiles
+1.
+2.
+6. Ejercicios VF
+1.
+2.
+3.
+4.
+7. Ejercicios Complete
+1.
+2.
+3.
+4.
+8. Ejercicios EL
+1.
+2.
+3.
+4.
+https://docplayer.es/32976913-Transferencia-de-masa-ii-operaciones-de-humidificacion.html
+
+5.
+9. Evaluacion Final
+1. Se enfria agua desde 110 °F(43.4°C) hasta 80°F(26.7°C) en una torre, bajo condiciones tales que la altura
+de la unidad de transferencia es de 1,75 ft(0.5334 m).
+El aire penetra por el fondo de la torre a 75 °F (23.9°C) y con una temperatura humeda de 70 °F(21.1 °C)
+Calculese la altura de la torre si se utiliza un caudal de aire 1.33 veces el caudal minimo. Despreciese la
+resistencia que ofrece la fase liquida a la transimision de calor.
+Utilicese el diagrama de humedad y psicrometrico.
+Diagrama de equilibrio entalpia aire saturado (H_i frente a temperatura) se da continuacion.
+Temperatura °F 		Entalpia BTU/lb
+60 			26.46
+70 			34.09
+80			43.69
+90			55.93
+100			71.73
+110			92.34
+Pistas:
+2.
+Pistas:
+3.
+Pistas:
+4.
+Pistas:
+5.
+Pistas:

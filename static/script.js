@@ -7,11 +7,14 @@ carousel.addEventListener("click",function(e){
     request.send();
     request.onreadystatechange=function(){
         if(this.readyState==4){
+            if(this.status==403){
             Swal.fire({
                 "title":"Inicia Sesion o Crea una Cuenta",
                 "html":this.responseText,
                 "width":600
             })
+        }
+        else{window.location="/"+item.id}
         }
     }
 })

@@ -1,0 +1,53 @@
+1. Explicación
+
+2. Diagramas de equilibrio
+
+3. Ecuaciones
+
+4. Aplicaciones
+
+5. Ejemplos
+5.1 Ejemplos teoricos
+1.
+2.
+5.2 Ejemplos faciles
+1.
+2.
+5.3 Ejemplos dificiles
+1.
+2.
+6. Ejercicios VF
+1.
+2.
+3.
+4.
+7. Ejercicios Complete
+1.
+2.
+3.
+4.
+8. Ejercicios EL
+1.Una solucion de CuSO4*H2O que contiene 3.5% de una impureza soluble que se disuelve de forma continua en suficiente agua y liquidos
+madres recirculados para formar una solucion saturada a 80°C . Despues se enfria la solucion hasta 25°C y se obtienen cristales de
+CuSO4*5H2O. Estos cristales arrastran liquido madre en una proporcion de 10% de su peso sobre base seca. Se secan los cristales hasta
+un contenido nulo de agua libre (CuSO4.5H2O). La impurificacion permitida en el producto es de 0.6%.
+Calcule:
+a) el peso de agua y de liquido madre circulantes que se requieren por cada 100kg de sulfato de cobre impuro
+b) el porcentaje de recuperacion de sulfato de cobre suponiendo que el liquido madre no recirculado se desprecia
+La solubilidad del CuSO4*5H2O a 80°C es 120g por 100g de H2O libre a 25°C es de 40g por 100g de H2O libre.
+
+2.
+3.
+4.
+5.
+9. Evaluacion Final
+1.
+Pistas:
+2.
+Pistas:
+3.
+Pistas:
+4.
+Pistas:
+5.
+Pistas:
